@@ -1,0 +1,501 @@
+PatientID,PatientName,Age,Gender,City,Department,AdmissionDate,Diagnosis,DoctorAssigned,Status,LengthOfStay,TreatmentCost
+NHS100001,Thomas Taylor,53,Female,Liverpool,Maternity,27/01/2026,Arthritis,Dr Ahmed,Discharged,35,19176
+NHS100002,Olivia Jones,21,Male,Coventry,Gastroenterology,20/06/2026,Skin Infection,Dr Wilson,Admitted,1,15045
+NHS100003,Ella Wright,9,Male,Coventry,Ophthalmology,14/02/2026,Hearing Loss,Dr Patel,Admitted,6,22610
+NHS100004,Noah Smith,38,Female,Milton Keynes,General Surgery,14/03/2026,Lung Cancer,Dr Roberts,Admitted,20,12004
+NHS100005,Maryam Patel,27,Female,London,Emergency Medicine,25/09/2026,Arthritis,Dr Evans,Discharged,35,21667
+NHS100006,Lily Thompson,48,Male,Sheffield,Ophthalmology,06/09/2026,Migraine,Dr Patel,Discharged,17,6324
+NHS100007,Olivia Ali,51,Male,Oxford,Emergency Medicine,21/06/2026,Pneumonia,Dr Taylor,Admitted,13,19958
+NHS100008,Mohammed Walker,2,Female,Leicester,Emergency Medicine,15/02/2026,Appendicitis,Dr Evans,Under Treatment,4,21682
+NHS100009,Grace Evans,70,Female,Sheffield,Oncology,28/05/2026,Appendicitis,Dr Roberts,Discharged,30,2196
+NHS100010,Noah Khan,25,Male,Nottingham,ENT,06/01/2026,Skin Infection,Dr Brown,Discharged,27,761
+NHS100011,Ella Taylor,66,Female,Manchester,Neurology,25/02/2026,Gastric Ulcer,Dr Ahmed,Under Treatment,25,3157
+NHS100012,Fatima Wright,4,Female,Nottingham,General Surgery,07/10/2026,Coronary Artery Disease,Dr Evans,Discharged,27,12165
+NHS100013,Mohammed Wilson,54,Male,Leeds,Dermatology,13/01/2026,Kidney Stones,Dr Wilson,Under Treatment,6,21312
+NHS100014,Zain Ahmed,50,Female,Leeds,Nephrology,30/01/2026,Kidney Stones,Dr Brown,Discharged,24,4894
+NHS100015,Olivia Ahmed,16,Male,Milton Keynes,Emergency Medicine,01/10/2026,Gastric Ulcer,Dr Ahmed,Under Treatment,9,15650
+NHS100016,Amelia Khan,95,Female,Newcastle,Emergency Medicine,11/01/2026,Diabetes,Dr Ahmed,Admitted,34,11394
+NHS100017,Lily Ali,18,Female,York,Neurology,22/09/2026,Appendicitis,Dr Taylor,Admitted,22,3792
+NHS100018,Lily Evans,27,Female,Nottingham,Emergency Medicine,20/05/2026,Coronary Artery Disease,Dr Evans,Admitted,13,17302
+NHS100019,Zain Smith,25,Female,Milton Keynes,Orthopedics,13/04/2026,Stroke,Dr Hughes,Discharged,6,11928
+NHS100020,Freya Williams,69,Male,Cambridge,General Surgery,11/10/2026,Cataract,Dr Khan,Admitted,17,24138
+NHS100021,Grace Roberts,51,Male,York,Nephrology,23/10/2026,Hip Fracture,Dr Hughes,Under Treatment,1,20450
+NHS100022,Olivia Hughes,16,Male,Bradford,Maternity,11/09/2026,Hearing Loss,Dr Taylor,Under Treatment,27,11088
+NHS100023,Charlie Khan,44,Male,Sheffield,Emergency Medicine,03/07/2026,Diabetes,Dr Ahmed,Discharged,25,17149
+NHS100024,Leo Ali,49,Female,Manchester,Nephrology,16/05/2026,Lung Cancer,Dr Patel,Discharged,33,20589
+NHS100025,George Wright,7,Female,Newcastle,Neurology,14/06/2026,Hearing Loss,Dr Hughes,Under Treatment,21,8701
+NHS100026,Thomas Khan,73,Female,Leicester,Ophthalmology,17/08/2026,Hearing Loss,Dr Evans,Under Treatment,18,11798
+NHS100027,Leo Brown,3,Female,Cambridge,Ophthalmology,25/01/2026,Hip Fracture,Dr Roberts,Under Treatment,3,16161
+NHS100028,Noah Roberts,48,Male,Norwich,Maternity,05/10/2026,Coronary Artery Disease,Dr Roberts,Under Treatment,19,23875
+NHS100029,Oliver Roberts,94,Female,Leicester,Ophthalmology,25/10/2026,Arthritis,Dr Patel,Discharged,19,6255
+NHS100030,Amelia Thompson,6,Male,Cambridge,Urology,02/08/2026,Hip Fracture,Dr Wilson,Admitted,18,17945
+NHS100031,Zain Ahmed,25,Female,Cambridge,Maternity,26/03/2026,Arthritis,Dr Roberts,Admitted,19,18045
+NHS100032,Jack Khan,79,Female,Bristol,Gastroenterology,17/02/2026,Arthritis,Dr Patel,Under Treatment,26,14067
+NHS100033,Jack Jones,73,Female,Portsmouth,Gastroenterology,18/08/2026,Skin Infection,Dr Smith,Discharged,9,7122
+NHS100034,Muhammad Jones,32,Male,Manchester,Emergency Medicine,19/04/2026,Arthritis,Dr Ahmed,Admitted,27,22252
+NHS100035,Freya Smith,6,Male,Portsmouth,Ophthalmology,14/06/2026,Lung Cancer,Dr Smith,Discharged,8,10008
+NHS100036,Charlie Ahmed,4,Female,Leeds,General Surgery,16/06/2026,Asthma,Dr Khan,Admitted,33,22456
+NHS100037,Isla Ali,25,Female,Manchester,Nephrology,11/08/2026,Hearing Loss,Dr Ahmed,Discharged,9,16335
+NHS100038,Noah Brown,59,Female,Reading,Respiratory Medicine,24/02/2026,Coronary Artery Disease,Dr Roberts,Under Treatment,23,10211
+NHS100039,Charlie Wright,7,Male,York,Maternity,05/07/2026,Arthritis,Dr Patel,Under Treatment,21,24871
+NHS100040,Zain Davies,50,Male,Portsmouth,Oncology,12/02/2026,Arthritis,Dr Roberts,Admitted,1,6076
+NHS100041,Olivia Jones,13,Male,Leicester,General Surgery,14/02/2026,Gastric Ulcer,Dr Wilson,Under Treatment,26,2703
+NHS100042,Noah Brown,60,Male,Leeds,Urology,29/01/2026,Coronary Artery Disease,Dr Taylor,Discharged,14,8586
+NHS100043,Maryam Thompson,44,Male,Manchester,Urology,01/05/2026,Coronary Artery Disease,Dr Brown,Discharged,26,12073
+NHS100044,George Jones,71,Male,Liverpool,Nephrology,28/04/2026,Asthma,Dr Brown,Admitted,9,19012
+NHS100045,Maryam Edwards,83,Female,Portsmouth,Gastroenterology,01/01/2026,Skin Infection,Dr Taylor,Under Treatment,9,14409
+NHS100046,Ella Johnson,45,Female,London,ENT,18/01/2026,Skin Infection,Dr Evans,Admitted,19,3367
+NHS100047,Ahmed Wilson,79,Female,Oxford,Maternity,13/07/2026,Stroke,Dr Hughes,Under Treatment,35,7261
+NHS100048,Mohammed Taylor,25,Male,Bradford,Emergency Medicine,24/07/2026,Diabetes,Dr Roberts,Discharged,35,6102
+NHS100049,Oliver Thomas,94,Male,Sheffield,ENT,18/07/2026,Asthma,Dr Taylor,Admitted,7,5218
+NHS100050,Thomas Brown,10,Female,Birmingham,Nephrology,21/02/2026,Lung Cancer,Dr Taylor,Admitted,17,14209
+NHS100051,Ella Thomas,67,Male,Reading,Neurology,17/02/2026,Arthritis,Dr Taylor,Discharged,20,15151
+NHS100052,Oliver Taylor,15,Male,Oxford,Maternity,01/05/2026,Gastric Ulcer,Dr Taylor,Under Treatment,12,5085
+NHS100053,Oliver Thompson,27,Male,London,ENT,18/07/2026,Gastric Ulcer,Dr Smith,Admitted,12,18317
+NHS100054,Ava Wilson,50,Female,Manchester,Maternity,17/05/2026,Coronary Artery Disease,Dr Patel,Under Treatment,26,9470
+NHS100055,George Ali,92,Male,Newcastle,Pediatrics,19/10/2026,Pneumonia,Dr Evans,Under Treatment,22,1492
+NHS100056,Oscar Johnson,26,Female,Bristol,General Surgery,16/03/2026,Coronary Artery Disease,Dr Khan,Admitted,10,6325
+NHS100057,Freya Evans,9,Female,Milton Keynes,Orthopedics,25/01/2026,Gastric Ulcer,Dr Hughes,Under Treatment,28,24052
+NHS100058,Amelia Taylor,28,Male,Oxford,Cardiology,01/10/2026,Appendicitis,Dr Brown,Under Treatment,2,7573
+NHS100059,Noah Ahmed,13,Male,Portsmouth,ENT,19/01/2026,Cataract,Dr Roberts,Under Treatment,25,11686
+NHS100060,Mohammed Wright,55,Male,Manchester,Cardiology,04/04/2026,Asthma,Dr Smith,Under Treatment,9,23881
+NHS100061,Oscar Walker,66,Female,Nottingham,Pediatrics,26/10/2026,Gastric Ulcer,Dr Smith,Under Treatment,34,22403
+NHS100062,Harry Smith,75,Male,York,ENT,09/10/2026,Pneumonia,Dr Hughes,Admitted,30,22221
+NHS100063,Mohammed Ali,62,Male,Bradford,Pediatrics,07/05/2026,Diabetes,Dr Roberts,Discharged,19,18395
+NHS100064,Emily Roberts,26,Male,Birmingham,Dermatology,16/10/2026,Coronary Artery Disease,Dr Hughes,Admitted,32,12954
+NHS100065,Aisha Wilson,14,Male,Leicester,Respiratory Medicine,04/08/2026,Gastric Ulcer,Dr Smith,Under Treatment,7,16744
+NHS100066,Zain Evans,81,Female,Coventry,Dermatology,27/09/2026,Pneumonia,Dr Khan,Under Treatment,18,11820
+NHS100067,Leo Evans,14,Male,York,Ophthalmology,04/09/2026,Diabetes,Dr Smith,Discharged,3,5347
+NHS100068,Maryam Wilson,88,Female,Sheffield,ENT,17/03/2026,Appendicitis,Dr Wilson,Under Treatment,12,16672
+NHS100069,Aisha Smith,61,Male,Nottingham,Dermatology,14/09/2026,Kidney Stones,Dr Evans,Under Treatment,29,8116
+NHS100070,Ava Patel,51,Female,Birmingham,Urology,04/02/2026,Gastric Ulcer,Dr Khan,Under Treatment,6,11475
+NHS100071,Sophia Smith,15,Male,Bradford,Dermatology,16/08/2026,Skin Infection,Dr Wilson,Under Treatment,31,24653
+NHS100072,Aisha Evans,5,Male,Leeds,Urology,24/06/2026,Hearing Loss,Dr Wilson,Under Treatment,31,14793
+NHS100073,Amelia Williams,35,Female,Reading,Pediatrics,08/01/2026,Kidney Stones,Dr Patel,Discharged,14,2287
+NHS100074,Freya Williams,67,Male,Norwich,General Surgery,02/03/2026,Appendicitis,Dr Khan,Discharged,32,2850
+NHS100075,Leo Walker,30,Female,Portsmouth,Ophthalmology,07/04/2026,Hearing Loss,Dr Patel,Discharged,5,12516
+NHS100076,Isla Brown,26,Female,Manchester,Ophthalmology,18/09/2026,Stroke,Dr Taylor,Admitted,13,3450
+NHS100077,Ava Khan,94,Female,Oxford,Ophthalmology,03/02/2026,Coronary Artery Disease,Dr Khan,Admitted,7,10551
+NHS100078,Isla Wright,94,Female,Bradford,Dermatology,17/09/2026,Stroke,Dr Taylor,Under Treatment,12,4717
+NHS100079,Sophia Wright,65,Female,Birmingham,Maternity,14/01/2026,Asthma,Dr Brown,Discharged,19,5721
+NHS100080,Ella Patel,47,Male,Reading,ENT,13/06/2026,Migraine,Dr Ahmed,Under Treatment,31,5852
+NHS100081,Olivia Evans,90,Female,Reading,Orthopedics,17/04/2026,Migraine,Dr Brown,Admitted,13,15939
+NHS100082,Maryam Roberts,61,Female,Oxford,ENT,04/09/2026,Arthritis,Dr Brown,Discharged,19,3349
+NHS100083,Sophia Brown,79,Female,Southampton,Respiratory Medicine,21/07/2026,Pneumonia,Dr Hughes,Under Treatment,9,8389
+NHS100084,Leo Thompson,66,Female,Norwich,Pediatrics,30/01/2026,Pneumonia,Dr Wilson,Discharged,12,17798
+NHS100085,Fatima Thompson,95,Male,Milton Keynes,Emergency Medicine,02/05/2026,Appendicitis,Dr Patel,Discharged,30,23498
+NHS100086,Leo Walker,90,Male,Leeds,ENT,11/03/2026,Lung Cancer,Dr Khan,Admitted,11,15632
+NHS100087,Ella Evans,79,Male,Newcastle,Orthopedics,18/05/2026,Pneumonia,Dr Hughes,Admitted,20,7035
+NHS100088,Oliver Wilson,21,Female,Norwich,Urology,18/08/2026,Diabetes,Dr Smith,Discharged,3,4045
+NHS100089,George Walker,28,Male,Sheffield,Nephrology,05/05/2026,Hearing Loss,Dr Khan,Admitted,7,18977
+NHS100090,George Edwards,85,Male,Liverpool,Emergency Medicine,26/09/2026,Arthritis,Dr Smith,Admitted,20,6347
+NHS100091,Zain Williams,75,Female,Southampton,Cardiology,19/08/2026,Pneumonia,Dr Roberts,Discharged,28,14901
+NHS100092,Emily Williams,25,Male,Newcastle,Ophthalmology,23/03/2026,Kidney Stones,Dr Roberts,Under Treatment,10,23015
+NHS100093,Fatima Davies,21,Male,Leicester,General Surgery,28/10/2026,Arthritis,Dr Patel,Admitted,20,21333
+NHS100094,Fatima Smith,64,Female,Leicester,Gastroenterology,01/04/2026,Kidney Stones,Dr Wilson,Under Treatment,28,24279
+NHS100095,Maryam Thomas,33,Female,Nottingham,Orthopedics,09/02/2026,Hip Fracture,Dr Hughes,Admitted,13,1040
+NHS100096,Ava Ahmed,39,Female,Manchester,Oncology,16/02/2026,Hearing Loss,Dr Taylor,Under Treatment,5,15038
+NHS100097,Oscar Brown,58,Male,Leeds,Pediatrics,06/10/2026,Skin Infection,Dr Smith,Discharged,30,10659
+NHS100098,Fatima Patel,62,Female,Bradford,Maternity,01/03/2026,Stroke,Dr Wilson,Discharged,17,9512
+NHS100099,Lily Taylor,14,Male,Bradford,Dermatology,21/10/2026,Migraine,Dr Roberts,Discharged,25,5684
+NHS100100,Muhammad Wilson,84,Female,Bristol,Ophthalmology,02/04/2026,Hearing Loss,Dr Smith,Under Treatment,16,24893
+NHS100101,Amelia Wright,21,Female,Milton Keynes,Dermatology,08/08/2026,Migraine,Dr Khan,Under Treatment,28,23270
+NHS100102,Fatima Evans,61,Male,Norwich,Orthopedics,03/01/2026,Hip Fracture,Dr Hughes,Discharged,29,24122
+NHS100103,Fatima Smith,84,Female,Coventry,General Surgery,14/06/2026,Kidney Stones,Dr Ahmed,Admitted,2,9253
+NHS100104,Maryam Thomas,24,Female,Sheffield,Urology,10/03/2026,Diabetes,Dr Smith,Admitted,34,4855
+NHS100105,Mohammed Thomas,52,Female,Birmingham,Emergency Medicine,30/03/2026,Pneumonia,Dr Khan,Discharged,21,5177
+NHS100106,Muhammad Khan,84,Female,Manchester,Nephrology,08/02/2026,Skin Infection,Dr Smith,Discharged,18,15734
+NHS100107,Ahmed Patel,80,Male,Birmingham,Orthopedics,06/10/2026,Hip Fracture,Dr Roberts,Discharged,15,4123
+NHS100108,Grace Jones,80,Female,Leeds,Orthopedics,23/09/2026,Asthma,Dr Ahmed,Under Treatment,5,3122
+NHS100109,Freya Ahmed,62,Female,Newcastle,Urology,19/09/2026,Arthritis,Dr Wilson,Discharged,26,21321
+NHS100110,Lily Edwards,28,Male,Birmingham,Urology,12/04/2026,Kidney Stones,Dr Evans,Admitted,20,9913
+NHS100111,Oscar Williams,69,Female,Coventry,Oncology,29/08/2026,Asthma,Dr Smith,Admitted,24,21520
+NHS100112,Amelia Brown,79,Female,Birmingham,Ophthalmology,30/04/2026,Diabetes,Dr Ahmed,Discharged,3,21987
+NHS100113,Ahmed Roberts,84,Male,Sheffield,Urology,20/07/2026,Asthma,Dr Brown,Under Treatment,27,8809
+NHS100114,Emily Johnson,26,Female,Newcastle,Nephrology,15/08/2026,Hearing Loss,Dr Hughes,Under Treatment,17,21266
+NHS100115,Amelia Ahmed,75,Female,Sheffield,General Surgery,06/09/2026,Hearing Loss,Dr Evans,Admitted,9,5477
+NHS100116,Ahmed Jones,86,Female,Southampton,Urology,11/08/2026,Hearing Loss,Dr Wilson,Admitted,22,1574
+NHS100117,Mohammed Evans,22,Male,Nottingham,Orthopedics,18/04/2026,Gastric Ulcer,Dr Smith,Under Treatment,33,13283
+NHS100118,Ahmed Davies,1,Male,Milton Keynes,Ophthalmology,13/07/2026,Pneumonia,Dr Wilson,Under Treatment,11,8839
+NHS100119,Grace Roberts,44,Male,Southampton,Emergency Medicine,28/01/2026,Appendicitis,Dr Patel,Under Treatment,20,22001
+NHS100120,Fatima Wilson,74,Female,Sheffield,Dermatology,14/07/2026,Asthma,Dr Taylor,Under Treatment,3,6815
+NHS100121,Mohammed Roberts,59,Male,London,General Surgery,12/08/2026,Coronary Artery Disease,Dr Hughes,Under Treatment,4,13903
+NHS100122,Leo Brown,17,Female,Bristol,Nephrology,02/02/2026,Lung Cancer,Dr Wilson,Admitted,16,15245
+NHS100123,George Taylor,65,Male,Cambridge,Dermatology,12/01/2026,Appendicitis,Dr Smith,Under Treatment,11,24850
+NHS100124,Ahmed Patel,75,Male,Liverpool,Emergency Medicine,12/09/2026,Stroke,Dr Roberts,Admitted,23,22411
+NHS100125,Noah Khan,75,Male,Reading,Oncology,07/02/2026,Asthma,Dr Wilson,Admitted,11,3539
+NHS100126,Zain Edwards,40,Male,Leicester,Orthopedics,17/05/2026,Coronary Artery Disease,Dr Brown,Discharged,24,4534
+NHS100127,Lily Johnson,2,Male,Nottingham,Neurology,03/05/2026,Diabetes,Dr Evans,Under Treatment,34,13739
+NHS100128,Amelia Roberts,60,Male,Reading,Emergency Medicine,06/05/2026,Hearing Loss,Dr Ahmed,Admitted,4,4287
+NHS100129,Grace Wright,26,Male,Reading,Ophthalmology,21/02/2026,Kidney Stones,Dr Wilson,Discharged,10,4985
+NHS100130,Leo Edwards,75,Female,Nottingham,Neurology,18/10/2026,Arthritis,Dr Roberts,Admitted,6,9744
+NHS100131,Harry Thomas,53,Female,Coventry,Neurology,14/09/2026,Hip Fracture,Dr Roberts,Under Treatment,9,21113
+NHS100132,Ella Edwards,40,Female,Cambridge,Urology,02/10/2026,Kidney Stones,Dr Hughes,Discharged,11,7252
+NHS100133,Maryam Khan,41,Male,Manchester,General Surgery,25/04/2026,Arthritis,Dr Wilson,Discharged,26,8438
+NHS100134,Oscar Roberts,69,Female,Reading,Respiratory Medicine,19/07/2026,Appendicitis,Dr Ahmed,Under Treatment,34,4273
+NHS100135,Aisha Williams,18,Female,Portsmouth,Oncology,13/08/2026,Kidney Stones,Dr Roberts,Under Treatment,8,9733
+NHS100136,Maryam Evans,11,Male,Norwich,Maternity,13/03/2026,Pneumonia,Dr Brown,Discharged,9,11100
+NHS100137,Oscar Taylor,32,Male,York,Emergency Medicine,12/08/2026,Skin Infection,Dr Khan,Under Treatment,3,9332
+NHS100138,Oscar Khan,86,Male,Oxford,Neurology,25/04/2026,Asthma,Dr Wilson,Under Treatment,11,17535
+NHS100139,Noah Roberts,24,Female,Manchester,Emergency Medicine,03/06/2026,Skin Infection,Dr Wilson,Discharged,29,5953
+NHS100140,Oscar Ahmed,80,Male,Leicester,General Surgery,04/01/2026,Gastric Ulcer,Dr Smith,Discharged,20,10561
+NHS100141,Ahmed Evans,57,Male,London,Maternity,29/01/2026,Coronary Artery Disease,Dr Taylor,Discharged,10,14620
+NHS100142,Harry Davies,59,Male,London,Maternity,22/10/2026,Appendicitis,Dr Smith,Admitted,10,6585
+NHS100143,Freya Ali,67,Male,Birmingham,Nephrology,11/10/2026,Stroke,Dr Wilson,Discharged,31,22662
+NHS100144,Lily Walker,24,Female,Cambridge,Neurology,27/09/2026,Coronary Artery Disease,Dr Hughes,Discharged,14,21556
+NHS100145,Ella Roberts,65,Male,Reading,Oncology,16/07/2026,Hip Fracture,Dr Wilson,Discharged,12,17118
+NHS100146,Isla Williams,41,Female,Reading,General Surgery,10/01/2026,Cataract,Dr Brown,Admitted,8,8146
+NHS100147,Grace Roberts,10,Male,Bradford,Urology,27/10/2026,Cataract,Dr Ahmed,Admitted,20,17132
+NHS100148,George Edwards,62,Female,Leicester,Orthopedics,29/07/2026,Migraine,Dr Khan,Admitted,25,12082
+NHS100149,Mohammed Davies,26,Male,Leicester,Gastroenterology,23/02/2026,Diabetes,Dr Evans,Under Treatment,13,6432
+NHS100150,Ava Johnson,85,Male,Milton Keynes,Neurology,13/05/2026,Coronary Artery Disease,Dr Brown,Under Treatment,17,15006
+NHS100151,Oliver Roberts,86,Female,Portsmouth,Maternity,11/02/2026,Arthritis,Dr Hughes,Discharged,20,16071
+NHS100152,Isla Williams,95,Male,Manchester,Nephrology,11/09/2026,Gastric Ulcer,Dr Patel,Discharged,14,24798
+NHS100153,Fatima Smith,53,Male,Norwich,Urology,28/01/2026,Arthritis,Dr Patel,Admitted,20,22474
+NHS100154,Emily Thomas,74,Male,Newcastle,Gastroenterology,07/07/2026,Hip Fracture,Dr Evans,Discharged,3,10621
+NHS100155,Oscar Wright,4,Male,Reading,Cardiology,28/05/2026,Skin Infection,Dr Patel,Discharged,5,18479
+NHS100156,George Ali,66,Female,York,Cardiology,22/04/2026,Hip Fracture,Dr Brown,Discharged,22,18659
+NHS100157,Thomas Edwards,24,Male,Bristol,Nephrology,01/08/2026,Pneumonia,Dr Roberts,Discharged,16,1383
+NHS100158,Thomas Thompson,80,Female,Birmingham,Dermatology,28/03/2026,Lung Cancer,Dr Evans,Under Treatment,3,7216
+NHS100159,Noah Walker,89,Female,Bradford,Dermatology,04/09/2026,Migraine,Dr Evans,Discharged,3,4546
+NHS100160,Leo Roberts,33,Male,York,Ophthalmology,27/10/2026,Skin Infection,Dr Wilson,Discharged,19,23940
+NHS100161,Zain Ali,74,Male,Coventry,Urology,04/10/2026,Hearing Loss,Dr Hughes,Discharged,28,23640
+NHS100162,Zain Patel,63,Male,Milton Keynes,Respiratory Medicine,02/07/2026,Kidney Stones,Dr Patel,Discharged,9,18192
+NHS100163,Grace Taylor,36,Female,Liverpool,Neurology,30/05/2026,Hip Fracture,Dr Roberts,Discharged,10,22825
+NHS100164,Fatima Taylor,81,Male,Bradford,Neurology,04/07/2026,Gastric Ulcer,Dr Patel,Under Treatment,28,2541
+NHS100165,Fatima Wilson,66,Male,Birmingham,Orthopedics,14/08/2026,Appendicitis,Dr Smith,Admitted,3,21892
+NHS100166,Freya Wilson,16,Male,Coventry,Cardiology,03/01/2026,Appendicitis,Dr Wilson,Discharged,25,12053
+NHS100167,Olivia Jones,18,Female,Leicester,Maternity,05/04/2026,Appendicitis,Dr Patel,Discharged,5,21531
+NHS100168,Harry Smith,71,Male,Bradford,Oncology,02/10/2026,Kidney Stones,Dr Roberts,Under Treatment,27,15632
+NHS100169,George Evans,9,Male,London,Maternity,28/01/2026,Gastric Ulcer,Dr Wilson,Admitted,34,3441
+NHS100170,Ella Jones,52,Female,Reading,Nephrology,01/06/2026,Hearing Loss,Dr Roberts,Discharged,6,5097
+NHS100171,Grace Evans,15,Female,Bradford,Gastroenterology,04/08/2026,Asthma,Dr Khan,Discharged,23,5119
+NHS100172,Jack Jones,49,Male,Oxford,Gastroenterology,01/07/2026,Lung Cancer,Dr Evans,Discharged,21,24362
+NHS100173,Emily Taylor,71,Female,London,Oncology,09/09/2026,Gastric Ulcer,Dr Khan,Under Treatment,25,24736
+NHS100174,Lily Johnson,40,Female,York,General Surgery,19/08/2026,Arthritis,Dr Wilson,Under Treatment,31,11762
+NHS100175,Harry Thomas,41,Male,Bristol,ENT,13/07/2026,Stroke,Dr Wilson,Under Treatment,22,19589
+NHS100176,Ahmed Jones,62,Male,Oxford,Nephrology,07/08/2026,Skin Infection,Dr Ahmed,Admitted,29,2276
+NHS100177,Harry Wright,67,Male,Coventry,Oncology,07/06/2026,Arthritis,Dr Brown,Under Treatment,9,22334
+NHS100178,Ahmed Williams,73,Male,Bradford,Nephrology,23/02/2026,Skin Infection,Dr Evans,Admitted,25,16913
+NHS100179,Charlie Ali,11,Female,Nottingham,Oncology,08/06/2026,Diabetes,Dr Khan,Discharged,4,3914
+NHS100180,Muhammad Edwards,60,Male,Leicester,Oncology,04/03/2026,Gastric Ulcer,Dr Hughes,Admitted,21,14771
+NHS100181,Oscar Jones,2,Male,Sheffield,Dermatology,02/03/2026,Kidney Stones,Dr Evans,Discharged,24,12418
+NHS100182,Olivia Thompson,80,Female,Nottingham,Gastroenterology,24/10/2026,Stroke,Dr Ahmed,Discharged,19,2380
+NHS100183,Aisha Thomas,54,Male,Coventry,Dermatology,13/04/2026,Gastric Ulcer,Dr Smith,Admitted,11,20970
+NHS100184,Oscar Davies,53,Female,York,Pediatrics,24/06/2026,Migraine,Dr Evans,Under Treatment,34,12454
+NHS100185,Amelia Ahmed,31,Male,Bradford,Urology,11/05/2026,Coronary Artery Disease,Dr Smith,Discharged,3,5635
+NHS100186,Harry Williams,27,Male,Oxford,Oncology,16/01/2026,Stroke,Dr Wilson,Under Treatment,33,2086
+NHS100187,Ella Ahmed,17,Male,Liverpool,Emergency Medicine,08/01/2026,Kidney Stones,Dr Hughes,Admitted,13,17017
+NHS100188,George Taylor,61,Female,Leicester,Ophthalmology,05/04/2026,Cataract,Dr Patel,Under Treatment,25,14399
+NHS100189,Olivia Edwards,5,Male,London,Urology,07/07/2026,Arthritis,Dr Evans,Discharged,35,22715
+NHS100190,Thomas Jones,62,Female,Southampton,Ophthalmology,04/09/2026,Coronary Artery Disease,Dr Taylor,Discharged,16,15551
+NHS100191,Freya Walker,17,Male,Portsmouth,Ophthalmology,14/05/2026,Coronary Artery Disease,Dr Smith,Discharged,1,16365
+NHS100192,Mohammed Ahmed,22,Female,Southampton,Respiratory Medicine,22/08/2026,Arthritis,Dr Taylor,Under Treatment,31,18236
+NHS100193,Maryam Roberts,48,Female,York,Nephrology,05/07/2026,Skin Infection,Dr Evans,Discharged,34,9753
+NHS100194,Zain Davies,73,Male,Norwich,Respiratory Medicine,15/07/2026,Coronary Artery Disease,Dr Smith,Under Treatment,21,3947
+NHS100195,Fatima Thomas,11,Female,Coventry,ENT,02/09/2026,Pneumonia,Dr Patel,Discharged,11,18339
+NHS100196,Amelia Smith,61,Female,Manchester,Gastroenterology,24/05/2026,Diabetes,Dr Taylor,Admitted,27,24852
+NHS100197,George Edwards,54,Male,York,Respiratory Medicine,29/01/2026,Lung Cancer,Dr Smith,Under Treatment,9,19537
+NHS100198,Thomas Patel,11,Female,London,Maternity,15/04/2026,Coronary Artery Disease,Dr Roberts,Under Treatment,21,16798
+NHS100199,Emily Khan,77,Male,Coventry,Nephrology,26/02/2026,Asthma,Dr Taylor,Admitted,19,20256
+NHS100200,Ava Evans,34,Male,Liverpool,Dermatology,11/08/2026,Appendicitis,Dr Brown,Discharged,19,8154
+NHS100201,Harry Williams,62,Male,Newcastle,Oncology,12/06/2026,Arthritis,Dr Ahmed,Under Treatment,26,3336
+NHS100202,Jack Evans,61,Female,Manchester,Neurology,08/09/2026,Asthma,Dr Hughes,Discharged,23,13956
+NHS100203,Freya Davies,49,Female,Cambridge,Nephrology,06/02/2026,Pneumonia,Dr Roberts,Admitted,28,24324
+NHS100204,Ava Patel,10,Female,Cambridge,Pediatrics,06/07/2026,Asthma,Dr Smith,Under Treatment,29,21773
+NHS100205,Sophia Ahmed,64,Female,London,General Surgery,15/09/2026,Appendicitis,Dr Hughes,Under Treatment,19,16741
+NHS100206,Jack Roberts,49,Male,Milton Keynes,Pediatrics,18/10/2026,Coronary Artery Disease,Dr Ahmed,Admitted,8,10872
+NHS100207,Charlie Ali,13,Male,Norwich,Nephrology,06/05/2026,Appendicitis,Dr Ahmed,Under Treatment,14,24788
+NHS100208,Mohammed Taylor,59,Female,Liverpool,Maternity,26/08/2026,Stroke,Dr Taylor,Discharged,12,3225
+NHS100209,Muhammad Jones,95,Female,Sheffield,Ophthalmology,08/02/2026,Coronary Artery Disease,Dr Brown,Admitted,13,11030
+NHS100210,Oscar Patel,12,Male,Bristol,Urology,06/02/2026,Pneumonia,Dr Taylor,Under Treatment,26,15929
+NHS100211,Charlie Taylor,38,Male,Leicester,Respiratory Medicine,12/08/2026,Asthma,Dr Brown,Admitted,9,21586
+NHS100212,Ava Wright,89,Female,Leeds,Emergency Medicine,22/01/2026,Lung Cancer,Dr Taylor,Discharged,22,19947
+NHS100213,Zain Patel,24,Female,Nottingham,Emergency Medicine,16/04/2026,Diabetes,Dr Taylor,Discharged,4,13573
+NHS100214,Aisha Hughes,35,Female,Southampton,ENT,10/07/2026,Appendicitis,Dr Smith,Admitted,8,13455
+NHS100215,Noah Ali,32,Male,Cambridge,Dermatology,24/01/2026,Pneumonia,Dr Wilson,Discharged,22,9370
+NHS100216,Thomas Evans,58,Female,Cambridge,ENT,12/09/2026,Pneumonia,Dr Patel,Discharged,8,22451
+NHS100217,Muhammad Ahmed,77,Male,Birmingham,Respiratory Medicine,21/10/2026,Diabetes,Dr Smith,Admitted,15,24311
+NHS100218,Harry Patel,2,Female,Coventry,Nephrology,04/08/2026,Hip Fracture,Dr Brown,Under Treatment,4,24281
+NHS100219,Amelia Evans,42,Male,Portsmouth,Pediatrics,18/06/2026,Kidney Stones,Dr Brown,Discharged,14,17034
+NHS100220,Emily Thomas,79,Male,Leeds,Pediatrics,23/01/2026,Stroke,Dr Patel,Discharged,31,23739
+NHS100221,Freya Roberts,22,Male,Milton Keynes,Maternity,29/09/2026,Asthma,Dr Roberts,Under Treatment,1,19712
+NHS100222,Aisha Davies,75,Female,Oxford,Dermatology,07/01/2026,Coronary Artery Disease,Dr Smith,Discharged,5,22305
+NHS100223,Noah Ali,89,Female,Portsmouth,Ophthalmology,02/06/2026,Diabetes,Dr Wilson,Discharged,10,8809
+NHS100224,Mohammed Brown,2,Female,York,Neurology,19/05/2026,Coronary Artery Disease,Dr Roberts,Discharged,1,24770
+NHS100225,Ella Taylor,83,Male,Southampton,Ophthalmology,02/02/2026,Hip Fracture,Dr Khan,Discharged,12,18252
+NHS100226,George Roberts,92,Female,London,ENT,05/07/2026,Migraine,Dr Smith,Discharged,1,14792
+NHS100227,Oscar Williams,9,Female,Bradford,Orthopedics,23/04/2026,Pneumonia,Dr Smith,Admitted,34,20903
+NHS100228,Ahmed Ali,5,Female,Birmingham,Emergency Medicine,16/07/2026,Stroke,Dr Roberts,Admitted,15,23045
+NHS100229,Ahmed Ali,29,Male,Nottingham,General Surgery,19/07/2026,Lung Cancer,Dr Smith,Under Treatment,17,11421
+NHS100230,Aisha Wilson,78,Female,Leicester,ENT,21/05/2026,Coronary Artery Disease,Dr Roberts,Admitted,14,16272
+NHS100231,Oliver Johnson,68,Female,Portsmouth,Orthopedics,18/02/2026,Hip Fracture,Dr Evans,Admitted,9,8004
+NHS100232,Ahmed Wilson,3,Male,Bristol,Orthopedics,09/09/2026,Hip Fracture,Dr Hughes,Discharged,16,8845
+NHS100233,Fatima Ahmed,84,Female,Birmingham,Cardiology,08/02/2026,Asthma,Dr Roberts,Under Treatment,8,20627
+NHS100234,Oliver Williams,34,Male,Leicester,Nephrology,30/05/2026,Hearing Loss,Dr Khan,Discharged,14,18564
+NHS100235,Oliver Patel,90,Female,Milton Keynes,Emergency Medicine,19/02/2026,Stroke,Dr Ahmed,Discharged,33,17636
+NHS100236,Ava Wilson,30,Male,Milton Keynes,Oncology,04/01/2026,Stroke,Dr Evans,Admitted,27,20155
+NHS100237,Amelia Taylor,16,Female,Oxford,Neurology,31/05/2026,Asthma,Dr Brown,Discharged,11,5041
+NHS100238,Maryam Hughes,86,Female,Oxford,Ophthalmology,03/03/2026,Asthma,Dr Khan,Under Treatment,2,3686
+NHS100239,Noah Williams,70,Female,Cambridge,ENT,15/08/2026,Migraine,Dr Patel,Discharged,2,15484
+NHS100240,Muhammad Brown,52,Male,Reading,Ophthalmology,31/01/2026,Lung Cancer,Dr Patel,Admitted,33,6340
+NHS100241,Fatima Hughes,93,Female,Leeds,Respiratory Medicine,18/03/2026,Cataract,Dr Evans,Under Treatment,27,7626
+NHS100242,Muhammad Roberts,86,Male,Portsmouth,Gastroenterology,10/03/2026,Diabetes,Dr Brown,Under Treatment,9,1351
+NHS100243,Jack Davies,28,Male,Manchester,Neurology,31/03/2026,Coronary Artery Disease,Dr Roberts,Under Treatment,11,17223
+NHS100244,Ava Davies,79,Female,Bristol,ENT,18/02/2026,Appendicitis,Dr Khan,Under Treatment,4,2327
+NHS100245,Harry Walker,46,Female,Leeds,Oncology,16/01/2026,Cataract,Dr Smith,Discharged,4,18616
+NHS100246,Charlie Ali,20,Female,Southampton,Nephrology,11/06/2026,Arthritis,Dr Taylor,Discharged,1,3996
+NHS100247,Lily Ahmed,71,Male,Southampton,Pediatrics,23/09/2026,Diabetes,Dr Brown,Admitted,26,11939
+NHS100248,Fatima Davies,40,Female,Newcastle,Dermatology,30/01/2026,Diabetes,Dr Evans,Discharged,1,23229
+NHS100249,George Hughes,7,Male,Southampton,Gastroenterology,18/01/2026,Skin Infection,Dr Patel,Under Treatment,9,17769
+NHS100250,Noah Roberts,45,Male,Newcastle,Orthopedics,08/02/2026,Hearing Loss,Dr Wilson,Under Treatment,19,15118
+NHS100251,Aisha Khan,62,Female,Bristol,Neurology,05/01/2026,Hip Fracture,Dr Khan,Admitted,10,22871
+NHS100252,Amelia Taylor,68,Female,Nottingham,Emergency Medicine,19/05/2026,Stroke,Dr Hughes,Discharged,33,13978
+NHS100253,Noah Patel,55,Male,Birmingham,Pediatrics,05/04/2026,Gastric Ulcer,Dr Khan,Discharged,25,20343
+NHS100254,Zain Khan,41,Female,Sheffield,Gastroenterology,12/06/2026,Asthma,Dr Wilson,Admitted,4,2782
+NHS100255,Charlie Jones,52,Female,Bradford,Emergency Medicine,13/06/2026,Migraine,Dr Taylor,Discharged,26,17929
+NHS100256,Oscar Smith,78,Male,Leeds,ENT,30/09/2026,Pneumonia,Dr Smith,Admitted,29,19107
+NHS100257,George Williams,39,Female,Newcastle,Neurology,03/01/2026,Coronary Artery Disease,Dr Wilson,Under Treatment,33,20257
+NHS100258,Sophia Brown,70,Female,Portsmouth,Pediatrics,10/07/2026,Appendicitis,Dr Evans,Admitted,3,21281
+NHS100259,Fatima Davies,64,Male,York,Urology,06/07/2026,Skin Infection,Dr Ahmed,Discharged,5,14156
+NHS100260,Harry Thompson,44,Male,Leeds,ENT,13/03/2026,Hearing Loss,Dr Brown,Under Treatment,29,1257
+NHS100261,Sophia Johnson,64,Male,London,Urology,05/06/2026,Cataract,Dr Evans,Under Treatment,11,22571
+NHS100262,Oliver Evans,47,Male,Newcastle,Emergency Medicine,24/02/2026,Asthma,Dr Wilson,Discharged,7,4613
+NHS100263,Olivia Brown,55,Male,Oxford,Urology,15/08/2026,Cataract,Dr Wilson,Admitted,33,6050
+NHS100264,Ella Brown,49,Male,Reading,Ophthalmology,21/03/2026,Diabetes,Dr Wilson,Admitted,17,1967
+NHS100265,Noah Johnson,86,Male,Leicester,Nephrology,01/03/2026,Lung Cancer,Dr Evans,Discharged,35,10406
+NHS100266,Aisha Wilson,66,Female,Leicester,Respiratory Medicine,03/01/2026,Asthma,Dr Brown,Discharged,3,15999
+NHS100267,Oscar Ali,9,Male,Milton Keynes,Dermatology,03/10/2026,Lung Cancer,Dr Khan,Under Treatment,2,2988
+NHS100268,Aisha Johnson,56,Male,Sheffield,Urology,02/03/2026,Gastric Ulcer,Dr Smith,Under Treatment,2,1423
+NHS100269,Grace Brown,35,Female,London,Nephrology,27/01/2026,Hearing Loss,Dr Ahmed,Discharged,29,22174
+NHS100270,Maryam Wright,2,Female,Bristol,Ophthalmology,27/07/2026,Stroke,Dr Khan,Discharged,10,17440
+NHS100271,Olivia Evans,42,Female,Newcastle,ENT,13/06/2026,Hip Fracture,Dr Khan,Under Treatment,22,5251
+NHS100272,Harry Smith,53,Male,Milton Keynes,Respiratory Medicine,23/01/2026,Coronary Artery Disease,Dr Evans,Under Treatment,7,13826
+NHS100273,Ava Wilson,69,Female,Birmingham,General Surgery,13/01/2026,Stroke,Dr Wilson,Under Treatment,2,4541
+NHS100274,Oliver Evans,31,Female,Southampton,Urology,13/07/2026,Lung Cancer,Dr Taylor,Discharged,35,23711
+NHS100275,Lily Wright,90,Female,Portsmouth,Emergency Medicine,25/04/2026,Hearing Loss,Dr Hughes,Under Treatment,29,1003
+NHS100276,Isla Wilson,86,Male,Nottingham,General Surgery,23/03/2026,Diabetes,Dr Patel,Under Treatment,17,23563
+NHS100277,Emily Hughes,4,Male,Bristol,Neurology,18/05/2026,Kidney Stones,Dr Wilson,Under Treatment,7,11339
+NHS100278,Charlie Evans,63,Female,Manchester,General Surgery,28/06/2026,Migraine,Dr Wilson,Discharged,7,16779
+NHS100279,Muhammad Wilson,5,Male,Bristol,Emergency Medicine,28/03/2026,Pneumonia,Dr Khan,Under Treatment,30,22725
+NHS100280,Charlie Edwards,74,Female,Reading,Pediatrics,15/02/2026,Hearing Loss,Dr Ahmed,Discharged,35,17107
+NHS100281,Oscar Khan,41,Male,Leeds,Respiratory Medicine,29/03/2026,Coronary Artery Disease,Dr Roberts,Discharged,30,9533
+NHS100282,Sophia Khan,6,Male,Leicester,Gastroenterology,26/05/2026,Stroke,Dr Wilson,Discharged,12,24009
+NHS100283,Ava Johnson,20,Male,Coventry,Ophthalmology,04/07/2026,Cataract,Dr Brown,Under Treatment,24,24473
+NHS100284,Maryam Jones,43,Female,Newcastle,Ophthalmology,14/03/2026,Hearing Loss,Dr Brown,Discharged,7,6589
+NHS100285,Aisha Williams,18,Male,Bradford,Urology,24/05/2026,Lung Cancer,Dr Taylor,Admitted,12,2152
+NHS100286,Ava Roberts,12,Male,Bristol,Respiratory Medicine,19/07/2026,Asthma,Dr Taylor,Discharged,10,7564
+NHS100287,Lily Brown,18,Male,Southampton,Neurology,11/02/2026,Kidney Stones,Dr Roberts,Under Treatment,11,23928
+NHS100288,Harry Hughes,55,Female,Birmingham,Ophthalmology,18/08/2026,Pneumonia,Dr Roberts,Admitted,32,7109
+NHS100289,Thomas Thomas,94,Male,Cambridge,Pediatrics,01/06/2026,Stroke,Dr Smith,Discharged,14,20413
+NHS100290,Amelia Williams,42,Female,Nottingham,Ophthalmology,18/08/2026,Kidney Stones,Dr Taylor,Admitted,35,10741
+NHS100291,Harry Khan,38,Male,Newcastle,Dermatology,03/08/2026,Stroke,Dr Smith,Discharged,3,10046
+NHS100292,Mohammed Evans,88,Female,York,Ophthalmology,28/07/2026,Diabetes,Dr Patel,Admitted,34,8155
+NHS100293,Fatima Taylor,16,Female,Norwich,Urology,05/04/2026,Asthma,Dr Khan,Admitted,8,1997
+NHS100294,Leo Edwards,23,Female,Liverpool,Emergency Medicine,07/08/2026,Hearing Loss,Dr Patel,Discharged,5,14446
+NHS100295,Ella Khan,38,Female,Cambridge,Orthopedics,29/05/2026,Hearing Loss,Dr Taylor,Admitted,35,2081
+NHS100296,Ahmed Ali,89,Male,Newcastle,Cardiology,02/10/2026,Coronary Artery Disease,Dr Hughes,Under Treatment,12,8199
+NHS100297,Emily Edwards,72,Female,Norwich,Respiratory Medicine,30/05/2026,Hearing Loss,Dr Ahmed,Under Treatment,18,23724
+NHS100298,Ava Smith,65,Female,Newcastle,Orthopedics,13/09/2026,Diabetes,Dr Hughes,Discharged,5,19061
+NHS100299,Sophia Patel,43,Male,Bristol,Respiratory Medicine,07/01/2026,Stroke,Dr Wilson,Discharged,1,1900
+NHS100300,Olivia Walker,59,Female,Leicester,Ophthalmology,23/06/2026,Pneumonia,Dr Brown,Admitted,25,19956
+NHS100301,Aisha Taylor,25,Male,York,ENT,26/08/2026,Skin Infection,Dr Khan,Under Treatment,5,20279
+NHS100302,Zain Hughes,44,Female,Leicester,Maternity,17/07/2026,Hip Fracture,Dr Brown,Discharged,34,6623
+NHS100303,George Walker,79,Female,Oxford,Cardiology,03/09/2026,Cataract,Dr Hughes,Discharged,4,1237
+NHS100304,Ava Taylor,88,Male,London,Pediatrics,11/09/2026,Stroke,Dr Wilson,Discharged,3,2394
+NHS100305,Charlie Roberts,86,Male,York,Cardiology,13/02/2026,Hearing Loss,Dr Hughes,Under Treatment,20,7470
+NHS100306,Sophia Ahmed,49,Male,Reading,ENT,22/06/2026,Kidney Stones,Dr Wilson,Discharged,33,855
+NHS100307,Mohammed Wilson,57,Male,Sheffield,Gastroenterology,09/01/2026,Hip Fracture,Dr Hughes,Admitted,23,894
+NHS100308,Thomas Davies,1,Male,Newcastle,Cardiology,20/10/2026,Diabetes,Dr Roberts,Discharged,4,7603
+NHS100309,Oliver Khan,44,Male,Liverpool,Maternity,14/10/2026,Migraine,Dr Khan,Admitted,32,18239
+NHS100310,Aisha Taylor,15,Male,Liverpool,Dermatology,19/05/2026,Arthritis,Dr Evans,Discharged,13,21897
+NHS100311,Muhammad Davies,27,Female,Liverpool,Nephrology,10/10/2026,Stroke,Dr Wilson,Under Treatment,13,18424
+NHS100312,Ava Hughes,14,Male,Norwich,Gastroenterology,31/08/2026,Asthma,Dr Evans,Admitted,11,15103
+NHS100313,Oliver Wright,31,Female,Manchester,Neurology,29/09/2026,Cataract,Dr Roberts,Discharged,35,6460
+NHS100314,Isla Walker,46,Male,Newcastle,Ophthalmology,07/03/2026,Skin Infection,Dr Brown,Admitted,8,16820
+NHS100315,Jack Patel,79,Male,Manchester,Dermatology,11/09/2026,Lung Cancer,Dr Taylor,Discharged,28,17032
+NHS100316,Leo Roberts,22,Female,Liverpool,Oncology,18/04/2026,Lung Cancer,Dr Wilson,Admitted,16,21198
+NHS100317,Charlie Thompson,40,Male,Nottingham,Orthopedics,20/08/2026,Lung Cancer,Dr Brown,Discharged,35,5947
+NHS100318,Emily Khan,21,Female,York,Dermatology,01/02/2026,Arthritis,Dr Brown,Under Treatment,27,5523
+NHS100319,Sophia Thompson,22,Female,Reading,Dermatology,10/03/2026,Cataract,Dr Ahmed,Discharged,32,24393
+NHS100320,Emily Taylor,69,Female,Birmingham,Pediatrics,24/10/2026,Cataract,Dr Smith,Discharged,10,23212
+NHS100321,Noah Roberts,16,Male,Norwich,Pediatrics,30/01/2026,Hip Fracture,Dr Roberts,Admitted,8,23078
+NHS100322,Ella Ali,59,Female,Coventry,Neurology,06/07/2026,Coronary Artery Disease,Dr Ahmed,Discharged,12,16901
+NHS100323,Ella Edwards,59,Male,Liverpool,Ophthalmology,16/08/2026,Gastric Ulcer,Dr Wilson,Discharged,21,14935
+NHS100324,Emily Smith,55,Female,Norwich,Pediatrics,17/09/2026,Appendicitis,Dr Taylor,Under Treatment,30,14255
+NHS100325,Freya Roberts,39,Female,Sheffield,Gastroenterology,02/02/2026,Hip Fracture,Dr Patel,Under Treatment,35,10460
+NHS100326,Amelia Edwards,41,Female,Manchester,Nephrology,19/05/2026,Hearing Loss,Dr Evans,Discharged,2,16852
+NHS100327,Oscar Khan,50,Male,Norwich,Maternity,01/04/2026,Hearing Loss,Dr Patel,Discharged,3,6961
+NHS100328,Sophia Wright,54,Female,London,Gastroenterology,11/10/2026,Migraine,Dr Evans,Admitted,7,5439
+NHS100329,Ella Wright,60,Female,Oxford,Ophthalmology,22/03/2026,Hearing Loss,Dr Khan,Discharged,35,22211
+NHS100330,George Johnson,72,Male,Leicester,Nephrology,19/02/2026,Asthma,Dr Taylor,Discharged,25,9094
+NHS100331,Oscar Khan,2,Female,Oxford,Neurology,04/10/2026,Coronary Artery Disease,Dr Brown,Discharged,33,22263
+NHS100332,Ava Jones,30,Female,Birmingham,Emergency Medicine,13/07/2026,Arthritis,Dr Hughes,Under Treatment,22,18602
+NHS100333,Ella Thomas,29,Female,Sheffield,Oncology,02/08/2026,Appendicitis,Dr Ahmed,Admitted,20,2843
+NHS100334,Noah Smith,52,Female,Norwich,Ophthalmology,12/04/2026,Hip Fracture,Dr Brown,Admitted,7,5817
+NHS100335,Ava Evans,11,Male,Nottingham,Gastroenterology,16/07/2026,Pneumonia,Dr Brown,Under Treatment,6,23606
+NHS100336,Ella Thompson,76,Female,Portsmouth,Urology,05/01/2026,Stroke,Dr Ahmed,Admitted,6,4276
+NHS100337,Mohammed Hughes,78,Female,Newcastle,Nephrology,04/05/2026,Pneumonia,Dr Wilson,Admitted,17,3601
+NHS100338,Leo Jones,24,Female,Manchester,Neurology,20/03/2026,Diabetes,Dr Patel,Under Treatment,9,13025
+NHS100339,Freya Wilson,46,Male,Reading,Emergency Medicine,22/03/2026,Kidney Stones,Dr Taylor,Under Treatment,27,5316
+NHS100340,Jack Edwards,29,Female,Leeds,Emergency Medicine,20/04/2026,Migraine,Dr Taylor,Under Treatment,7,15333
+NHS100341,Jack Davies,25,Male,Birmingham,Emergency Medicine,28/08/2026,Migraine,Dr Evans,Under Treatment,28,8506
+NHS100342,Isla Evans,50,Female,Southampton,ENT,06/08/2026,Arthritis,Dr Khan,Under Treatment,16,5772
+NHS100343,Charlie Walker,2,Male,Bradford,Neurology,13/04/2026,Diabetes,Dr Ahmed,Discharged,24,6641
+NHS100344,Sophia Thompson,72,Male,Reading,Gastroenterology,28/04/2026,Appendicitis,Dr Evans,Under Treatment,7,15962
+NHS100345,Thomas Brown,2,Female,Nottingham,Ophthalmology,01/09/2026,Diabetes,Dr Brown,Under Treatment,15,5567
+NHS100346,Oscar Walker,40,Male,York,Cardiology,09/01/2026,Asthma,Dr Taylor,Discharged,35,11672
+NHS100347,Zain Taylor,68,Female,Portsmouth,Ophthalmology,17/06/2026,Migraine,Dr Taylor,Under Treatment,3,23637
+NHS100348,Jack Ahmed,74,Male,Leeds,Maternity,20/04/2026,Stroke,Dr Patel,Admitted,20,13194
+NHS100349,Oliver Johnson,82,Female,Bradford,ENT,07/08/2026,Kidney Stones,Dr Hughes,Admitted,13,13651
+NHS100350,Leo Walker,56,Female,Oxford,Gastroenterology,13/04/2026,Skin Infection,Dr Evans,Discharged,26,15575
+NHS100351,Mohammed Wright,92,Female,Newcastle,Gastroenterology,04/07/2026,Skin Infection,Dr Taylor,Discharged,34,7697
+NHS100352,Noah Smith,18,Male,Cambridge,Orthopedics,25/08/2026,Appendicitis,Dr Taylor,Under Treatment,17,4986
+NHS100353,Aisha Brown,42,Male,Oxford,Urology,07/08/2026,Cataract,Dr Evans,Discharged,25,10848
+NHS100354,George Johnson,78,Female,Bristol,Oncology,11/08/2026,Lung Cancer,Dr Wilson,Under Treatment,22,11035
+NHS100355,Maryam Walker,44,Male,Milton Keynes,Nephrology,30/08/2026,Stroke,Dr Patel,Under Treatment,14,2012
+NHS100356,Jack Davies,7,Male,Newcastle,General Surgery,20/10/2026,Coronary Artery Disease,Dr Patel,Under Treatment,1,8652
+NHS100357,Noah Khan,82,Male,Southampton,Ophthalmology,09/07/2026,Diabetes,Dr Patel,Admitted,5,774
+NHS100358,Sophia Roberts,37,Male,Coventry,Pediatrics,09/10/2026,Cataract,Dr Taylor,Discharged,32,24018
+NHS100359,Maryam Johnson,87,Female,Manchester,Maternity,28/03/2026,Cataract,Dr Ahmed,Under Treatment,35,9031
+NHS100360,Oscar Patel,8,Male,London,Pediatrics,14/10/2026,Stroke,Dr Evans,Discharged,8,18798
+NHS100361,Charlie Ali,29,Male,Norwich,Gastroenterology,18/07/2026,Cataract,Dr Brown,Discharged,7,6602
+NHS100362,Ella Thompson,5,Female,Reading,General Surgery,17/10/2026,Migraine,Dr Khan,Under Treatment,19,19817
+NHS100363,Ahmed Khan,78,Male,York,Maternity,17/08/2026,Pneumonia,Dr Brown,Admitted,2,24157
+NHS100364,Fatima Evans,66,Female,Leicester,Maternity,04/02/2026,Lung Cancer,Dr Khan,Admitted,4,6101
+NHS100365,Sophia Hughes,33,Female,Oxford,Pediatrics,04/05/2026,Diabetes,Dr Roberts,Discharged,3,7696
+NHS100366,Amelia Thomas,82,Female,Sheffield,Orthopedics,23/09/2026,Cataract,Dr Brown,Admitted,5,18339
+NHS100367,Sophia Roberts,8,Male,Norwich,Maternity,12/01/2026,Kidney Stones,Dr Ahmed,Admitted,9,8638
+NHS100368,Sophia Roberts,35,Female,Southampton,Ophthalmology,30/09/2026,Hip Fracture,Dr Taylor,Admitted,12,4019
+NHS100369,Sophia Wilson,68,Male,Portsmouth,Emergency Medicine,21/03/2026,Diabetes,Dr Taylor,Under Treatment,19,5521
+NHS100370,Oliver Smith,8,Female,Sheffield,Dermatology,10/10/2026,Gastric Ulcer,Dr Wilson,Under Treatment,30,3308
+NHS100371,Oscar Taylor,55,Male,York,Dermatology,09/08/2026,Migraine,Dr Smith,Admitted,25,17335
+NHS100372,Zain Taylor,9,Male,Oxford,ENT,20/07/2026,Hearing Loss,Dr Ahmed,Discharged,14,21039
+NHS100373,Amelia Roberts,71,Female,Sheffield,Orthopedics,12/06/2026,Gastric Ulcer,Dr Brown,Admitted,30,5031
+NHS100374,Oliver Hughes,39,Male,Norwich,Gastroenterology,01/07/2026,Hip Fracture,Dr Brown,Under Treatment,20,4199
+NHS100375,Olivia Wilson,51,Male,Sheffield,Orthopedics,27/06/2026,Skin Infection,Dr Ahmed,Under Treatment,35,10261
+NHS100376,Oscar Brown,36,Male,Southampton,Urology,09/02/2026,Skin Infection,Dr Wilson,Under Treatment,4,2396
+NHS100377,Jack Brown,30,Female,York,Nephrology,07/06/2026,Migraine,Dr Roberts,Admitted,32,9548
+NHS100378,Aisha Thomas,1,Male,Manchester,Ophthalmology,13/08/2026,Cataract,Dr Smith,Admitted,22,16689
+NHS100379,Amelia Ali,1,Male,Portsmouth,Orthopedics,18/06/2026,Lung Cancer,Dr Khan,Under Treatment,2,7309
+NHS100380,Thomas Davies,85,Male,Liverpool,Oncology,02/01/2026,Coronary Artery Disease,Dr Khan,Discharged,23,8511
+NHS100381,Maryam Davies,44,Female,Reading,Neurology,22/10/2026,Coronary Artery Disease,Dr Khan,Admitted,23,18925
+NHS100382,Noah Evans,90,Female,Bristol,Urology,10/07/2026,Kidney Stones,Dr Taylor,Under Treatment,12,23076
+NHS100383,George Wright,2,Female,Nottingham,Gastroenterology,01/05/2026,Kidney Stones,Dr Roberts,Admitted,32,13551
+NHS100384,Maryam Davies,10,Female,Liverpool,Neurology,25/04/2026,Stroke,Dr Brown,Discharged,22,9286
+NHS100385,Grace Taylor,21,Male,Manchester,Cardiology,20/01/2026,Pneumonia,Dr Taylor,Discharged,29,24984
+NHS100386,Harry Hughes,54,Female,Bradford,Pediatrics,11/06/2026,Arthritis,Dr Smith,Under Treatment,1,22766
+NHS100387,Zain Patel,70,Female,Nottingham,Pediatrics,22/04/2026,Arthritis,Dr Khan,Admitted,27,3234
+NHS100388,Amelia Smith,30,Female,Cambridge,Maternity,23/01/2026,Stroke,Dr Hughes,Under Treatment,9,11927
+NHS100389,Fatima Brown,4,Male,Reading,Ophthalmology,22/03/2026,Arthritis,Dr Ahmed,Admitted,19,1440
+NHS100390,Charlie Wright,30,Male,Liverpool,ENT,24/07/2026,Lung Cancer,Dr Evans,Admitted,11,9987
+NHS100391,Maryam Patel,3,Male,York,ENT,01/03/2026,Hip Fracture,Dr Ahmed,Admitted,5,21962
+NHS100392,Oscar Johnson,25,Female,Milton Keynes,Respiratory Medicine,22/07/2026,Skin Infection,Dr Smith,Admitted,24,11159
+NHS100393,Lily Evans,29,Male,Oxford,ENT,05/04/2026,Hip Fracture,Dr Taylor,Admitted,22,1401
+NHS100394,Mohammed Patel,4,Female,Nottingham,Maternity,14/05/2026,Hip Fracture,Dr Wilson,Admitted,26,12392
+NHS100395,Ella Walker,82,Male,Milton Keynes,Dermatology,18/04/2026,Arthritis,Dr Smith,Discharged,20,21397
+NHS100396,Zain Ali,80,Male,Newcastle,ENT,30/03/2026,Kidney Stones,Dr Khan,Discharged,31,10063
+NHS100397,Sophia Roberts,51,Male,Birmingham,Neurology,15/03/2026,Cataract,Dr Brown,Discharged,12,18394
+NHS100398,Mohammed Ali,60,Male,Bristol,Ophthalmology,20/05/2026,Arthritis,Dr Roberts,Admitted,4,15303
+NHS100399,Aisha Roberts,49,Male,Milton Keynes,Emergency Medicine,10/06/2026,Cataract,Dr Wilson,Discharged,7,12520
+NHS100400,Aisha Williams,65,Male,Liverpool,Gastroenterology,06/02/2026,Coronary Artery Disease,Dr Roberts,Discharged,14,23996
+NHS100401,Oscar Walker,42,Female,Bradford,General Surgery,20/06/2026,Hip Fracture,Dr Khan,Discharged,17,15269
+NHS100402,Muhammad Patel,91,Female,Milton Keynes,Neurology,09/09/2026,Gastric Ulcer,Dr Brown,Admitted,3,1925
+NHS100403,Isla Johnson,46,Female,Leicester,General Surgery,29/01/2026,Appendicitis,Dr Smith,Under Treatment,32,897
+NHS100404,Leo Walker,71,Female,Sheffield,Urology,14/04/2026,Hearing Loss,Dr Brown,Admitted,30,13396
+NHS100405,Ava Williams,28,Female,Nottingham,Orthopedics,14/08/2026,Diabetes,Dr Taylor,Discharged,10,5377
+NHS100406,Olivia Walker,68,Female,Milton Keynes,Orthopedics,24/10/2026,Gastric Ulcer,Dr Brown,Under Treatment,17,20895
+NHS100407,Thomas Patel,27,Male,York,Cardiology,25/09/2026,Cataract,Dr Brown,Under Treatment,35,24229
+NHS100408,Oscar Taylor,69,Male,Sheffield,Urology,17/01/2026,Pneumonia,Dr Ahmed,Admitted,6,22380
+NHS100409,Emily Johnson,49,Male,Southampton,Respiratory Medicine,31/03/2026,Hearing Loss,Dr Patel,Under Treatment,35,19638
+NHS100410,Charlie Wilson,57,Female,Portsmouth,ENT,10/08/2026,Asthma,Dr Roberts,Under Treatment,34,12888
+NHS100411,Maryam Thomas,34,Male,Coventry,Urology,31/07/2026,Coronary Artery Disease,Dr Roberts,Under Treatment,13,24879
+NHS100412,Olivia Patel,12,Male,Birmingham,Oncology,17/01/2026,Stroke,Dr Hughes,Discharged,3,3335
+NHS100413,Sophia Thomas,55,Female,Liverpool,Maternity,06/01/2026,Coronary Artery Disease,Dr Patel,Under Treatment,22,5964
+NHS100414,Noah Taylor,40,Male,Reading,Respiratory Medicine,24/10/2026,Lung Cancer,Dr Roberts,Discharged,24,5854
+NHS100415,Isla Walker,50,Female,Liverpool,Oncology,19/02/2026,Hip Fracture,Dr Patel,Admitted,29,22889
+NHS100416,Thomas Jones,91,Female,Southampton,Gastroenterology,31/07/2026,Hearing Loss,Dr Taylor,Under Treatment,18,21924
+NHS100417,Lily Wright,82,Male,York,Cardiology,13/05/2026,Asthma,Dr Wilson,Admitted,30,15684
+NHS100418,Emily Thomas,60,Female,York,Gastroenterology,18/04/2026,Asthma,Dr Smith,Admitted,35,11424
+NHS100419,Jack Edwards,26,Female,London,Gastroenterology,29/06/2026,Coronary Artery Disease,Dr Brown,Under Treatment,9,19695
+NHS100420,Oliver Williams,5,Male,Reading,Neurology,20/09/2026,Arthritis,Dr Roberts,Discharged,27,11545
+NHS100421,Fatima Edwards,63,Female,Birmingham,Maternity,26/10/2026,Hearing Loss,Dr Taylor,Admitted,2,19395
+NHS100422,Charlie Hughes,58,Female,Nottingham,Ophthalmology,24/05/2026,Cataract,Dr Smith,Under Treatment,8,6754
+NHS100423,Freya Taylor,57,Male,Oxford,Nephrology,05/07/2026,Cataract,Dr Roberts,Admitted,11,13932
+NHS100424,Maryam Walker,21,Female,Oxford,Pediatrics,18/02/2026,Kidney Stones,Dr Evans,Admitted,22,13545
+NHS100425,Aisha Thompson,94,Female,Reading,Ophthalmology,13/01/2026,Hearing Loss,Dr Taylor,Admitted,28,24985
+NHS100426,Oscar Taylor,60,Male,Reading,Pediatrics,18/10/2026,Pneumonia,Dr Wilson,Admitted,11,9842
+NHS100427,Oliver Ahmed,55,Female,Milton Keynes,Nephrology,27/07/2026,Arthritis,Dr Patel,Admitted,14,18840
+NHS100428,Muhammad Thompson,10,Female,Sheffield,Maternity,25/06/2026,Hearing Loss,Dr Khan,Discharged,13,12931
+NHS100429,Oscar Walker,76,Female,Leeds,Neurology,12/09/2026,Migraine,Dr Smith,Admitted,7,23587
+NHS100430,Muhammad Smith,78,Female,Birmingham,Pediatrics,08/03/2026,Asthma,Dr Patel,Under Treatment,7,6052
+NHS100431,Zain Taylor,48,Female,Nottingham,Pediatrics,06/02/2026,Hip Fracture,Dr Taylor,Under Treatment,21,20270
+NHS100432,Fatima Roberts,2,Female,Bradford,Maternity,28/02/2026,Appendicitis,Dr Patel,Admitted,13,22006
+NHS100433,Emily Patel,55,Male,Norwich,Oncology,29/08/2026,Hip Fracture,Dr Ahmed,Discharged,33,19312
+NHS100434,Jack Ahmed,8,Male,Bristol,Pediatrics,13/03/2026,Stroke,Dr Roberts,Admitted,32,20443
+NHS100435,Zain Ahmed,77,Female,London,Pediatrics,10/01/2026,Hearing Loss,Dr Khan,Admitted,12,12470
+NHS100436,Grace Smith,8,Male,Leicester,Emergency Medicine,12/10/2026,Hip Fracture,Dr Smith,Under Treatment,25,2455
+NHS100437,Grace Hughes,17,Male,Birmingham,Pediatrics,07/06/2026,Cataract,Dr Hughes,Under Treatment,3,16613
+NHS100438,Oscar Patel,44,Female,London,ENT,02/10/2026,Skin Infection,Dr Smith,Under Treatment,11,24890
+NHS100439,Aisha Johnson,77,Male,Oxford,Oncology,03/10/2026,Lung Cancer,Dr Brown,Under Treatment,5,8309
+NHS100440,Ava Jones,9,Female,Newcastle,General Surgery,04/05/2026,Hip Fracture,Dr Wilson,Admitted,21,22644
+NHS100441,Ahmed Khan,76,Male,Bristol,Urology,15/10/2026,Hearing Loss,Dr Wilson,Admitted,29,22049
+NHS100442,Muhammad Taylor,45,Male,Milton Keynes,Oncology,20/07/2026,Diabetes,Dr Hughes,Under Treatment,2,12197
+NHS100443,Leo Hughes,41,Female,Oxford,Orthopedics,15/10/2026,Hip Fracture,Dr Hughes,Discharged,1,21262
+NHS100444,Harry Thompson,61,Male,Portsmouth,Oncology,07/06/2026,Gastric Ulcer,Dr Hughes,Admitted,12,13814
+NHS100445,Fatima Walker,24,Male,Newcastle,ENT,11/04/2026,Gastric Ulcer,Dr Hughes,Admitted,13,17405
+NHS100446,Sophia Roberts,19,Male,Bristol,Orthopedics,15/02/2026,Asthma,Dr Evans,Admitted,20,22632
+NHS100447,Noah Walker,3,Female,Coventry,ENT,23/08/2026,Gastric Ulcer,Dr Khan,Admitted,11,19490
+NHS100448,Grace Brown,35,Female,Liverpool,General Surgery,12/08/2026,Hearing Loss,Dr Hughes,Discharged,34,17104
+NHS100449,Fatima Thompson,24,Female,Milton Keynes,Urology,13/06/2026,Skin Infection,Dr Wilson,Under Treatment,9,13200
+NHS100450,Jack Wright,78,Male,Reading,Dermatology,09/08/2026,Hearing Loss,Dr Roberts,Under Treatment,5,16825
+NHS100451,Charlie Wilson,4,Female,Oxford,Oncology,05/02/2026,Gastric Ulcer,Dr Hughes,Admitted,13,22611
+NHS100452,Noah Williams,73,Male,Bradford,Oncology,04/04/2026,Kidney Stones,Dr Evans,Discharged,32,5417
+NHS100453,Amelia Evans,71,Male,Bradford,Respiratory Medicine,27/02/2026,Stroke,Dr Hughes,Discharged,4,23180
+NHS100454,Freya Ali,54,Female,Manchester,Maternity,15/07/2026,Coronary Artery Disease,Dr Roberts,Discharged,32,16418
+NHS100455,Fatima Brown,2,Male,Nottingham,Cardiology,12/08/2026,Coronary Artery Disease,Dr Taylor,Under Treatment,15,16888
+NHS100456,Freya Hughes,51,Female,London,Ophthalmology,17/09/2026,Lung Cancer,Dr Ahmed,Discharged,25,10729
+NHS100457,Jack Jones,76,Female,Newcastle,Pediatrics,18/09/2026,Hearing Loss,Dr Taylor,Discharged,20,14994
+NHS100458,Lily Patel,61,Female,Milton Keynes,Nephrology,29/01/2026,Skin Infection,Dr Patel,Discharged,33,3327
+NHS100459,Lily Smith,78,Male,Leicester,Maternity,08/09/2026,Asthma,Dr Brown,Admitted,16,20915
+NHS100460,Zain Walker,58,Female,Norwich,Ophthalmology,22/01/2026,Lung Cancer,Dr Evans,Under Treatment,34,24022
+NHS100461,Harry Patel,81,Male,Sheffield,Ophthalmology,04/06/2026,Appendicitis,Dr Ahmed,Admitted,23,11822
+NHS100462,Ahmed Jones,68,Male,London,Nephrology,20/09/2026,Migraine,Dr Hughes,Under Treatment,19,3985
+NHS100463,Oliver Ahmed,80,Male,Liverpool,Dermatology,27/01/2026,Lung Cancer,Dr Wilson,Under Treatment,5,9718
+NHS100464,Maryam Jones,47,Female,Sheffield,Ophthalmology,10/06/2026,Hip Fracture,Dr Smith,Under Treatment,25,6522
+NHS100465,George Ahmed,6,Male,Milton Keynes,Emergency Medicine,04/07/2026,Stroke,Dr Khan,Discharged,4,12078
+NHS100466,Noah Smith,83,Female,Birmingham,Ophthalmology,09/09/2026,Migraine,Dr Evans,Discharged,26,16529
+NHS100467,Olivia Patel,88,Male,Milton Keynes,Dermatology,16/04/2026,Kidney Stones,Dr Ahmed,Admitted,12,22123
+NHS100468,Maryam Hughes,12,Male,London,Cardiology,20/07/2026,Asthma,Dr Wilson,Admitted,26,6754
+NHS100469,George Brown,7,Female,Reading,Pediatrics,13/05/2026,Diabetes,Dr Patel,Under Treatment,9,8874
+NHS100470,George Jones,69,Male,Cambridge,Dermatology,14/01/2026,Appendicitis,Dr Evans,Discharged,2,1359
+NHS100471,Ahmed Taylor,91,Female,Milton Keynes,Gastroenterology,11/03/2026,Pneumonia,Dr Brown,Admitted,34,15926
+NHS100472,Charlie Williams,49,Female,York,Pediatrics,19/09/2026,Cataract,Dr Brown,Under Treatment,9,21910
+NHS100473,Maryam Walker,75,Male,Leicester,Pediatrics,23/09/2026,Kidney Stones,Dr Khan,Discharged,17,15310
+NHS100474,Aisha Ahmed,89,Male,Milton Keynes,Emergency Medicine,02/03/2026,Arthritis,Dr Khan,Discharged,33,21505
+NHS100475,Emily Wilson,79,Female,Norwich,Pediatrics,16/04/2026,Coronary Artery Disease,Dr Roberts,Under Treatment,24,21930
+NHS100476,Sophia Johnson,41,Male,Oxford,Cardiology,24/05/2026,Arthritis,Dr Patel,Under Treatment,8,20422
+NHS100477,Fatima Patel,18,Female,London,Maternity,14/04/2026,Coronary Artery Disease,Dr Taylor,Admitted,10,23326
+NHS100478,Zain Wilson,56,Female,Sheffield,Dermatology,26/09/2026,Arthritis,Dr Ahmed,Admitted,8,6758
+NHS100479,Amelia Hughes,16,Female,Norwich,Maternity,10/07/2026,Asthma,Dr Roberts,Discharged,6,9329
+NHS100480,Fatima Walker,95,Male,Cambridge,Neurology,22/03/2026,Skin Infection,Dr Smith,Admitted,17,12586
+NHS100481,Maryam Wilson,70,Female,York,Nephrology,12/09/2026,Hearing Loss,Dr Hughes,Under Treatment,12,8398
+NHS100482,Charlie Thomas,31,Male,Liverpool,Oncology,07/06/2026,Appendicitis,Dr Brown,Discharged,7,19233
+NHS100483,Harry Johnson,11,Female,Cambridge,Dermatology,28/05/2026,Lung Cancer,Dr Wilson,Admitted,7,14765
+NHS100484,Amelia Edwards,90,Male,Oxford,Pediatrics,09/10/2026,Skin Infection,Dr Roberts,Admitted,7,2596
+NHS100485,Jack Thomas,11,Female,Cambridge,Urology,23/09/2026,Lung Cancer,Dr Ahmed,Admitted,2,8035
+NHS100486,Harry Patel,28,Female,Leicester,Maternity,08/08/2026,Kidney Stones,Dr Brown,Under Treatment,18,21854
+NHS100487,Oliver Brown,43,Male,Manchester,Emergency Medicine,06/08/2026,Hearing Loss,Dr Smith,Admitted,9,19168
+NHS100488,Charlie Hughes,66,Male,Bradford,Nephrology,22/05/2026,Diabetes,Dr Patel,Admitted,12,5553
+NHS100489,Amelia Thompson,78,Female,Norwich,Nephrology,02/04/2026,Skin Infection,Dr Hughes,Admitted,13,7992
+NHS100490,Emily Ahmed,61,Male,Portsmouth,Gastroenterology,08/01/2026,Diabetes,Dr Ahmed,Discharged,24,5360
+NHS100491,Aisha Wright,45,Female,Norwich,Oncology,12/05/2026,Migraine,Dr Wilson,Discharged,29,5026
+NHS100492,Maryam Wilson,22,Male,Norwich,Orthopedics,01/05/2026,Migraine,Dr Wilson,Admitted,2,22321
+NHS100493,Mohammed Patel,76,Female,London,Neurology,12/02/2026,Arthritis,Dr Wilson,Under Treatment,17,7764
+NHS100494,Freya Williams,6,Male,Sheffield,Oncology,23/01/2026,Gastric Ulcer,Dr Khan,Admitted,28,15693
+NHS100495,Jack Jones,88,Male,Milton Keynes,ENT,05/03/2026,Arthritis,Dr Wilson,Discharged,9,20280
+NHS100496,Lily Hughes,63,Male,Newcastle,Nephrology,12/01/2026,Pneumonia,Dr Hughes,Admitted,22,23849
+NHS100497,Maryam Walker,44,Male,Liverpool,Emergency Medicine,04/07/2026,Gastric Ulcer,Dr Ahmed,Under Treatment,11,16763
+NHS100498,Oliver Smith,11,Female,Liverpool,Neurology,05/01/2026,Migraine,Dr Taylor,Discharged,26,21063
+NHS100499,Muhammad Williams,40,Male,Leicester,Nephrology,12/06/2026,Lung Cancer,Dr Khan,Under Treatment,6,5479
+NHS100500,Ahmed Brown,65,Female,Nottingham,Neurology,22/06/2026,Skin Infection,Dr Ahmed,Under Treatment,24,14053

@@ -1,8 +1,9 @@
 import Patient from "../models/Patient.js";
+import {parseDate} from "../config/conversion-helper.js";
+
 
 export const addPatient = async (req, res) => {
     try {
-        // Get patient information from request body
         const {
             PatientID,
             PatientName,
@@ -18,10 +19,18 @@ export const addPatient = async (req, res) => {
             TreatmentCost
         } = req.body;
 
-        // Check if PatientID already exists
-        const existingPatient = await Patient.findOne({
-            PatientID: PatientID
-        });
+        // Validate and convert AdmissionDate
+        const parsedDate = parseDate(AdmissionDate);
+
+        if (!parsedDate) {
+            return res.status(400).json({
+                success: false,
+                message: 'Invalid AdmissionDate. Use DD/MM/YYYY or YYYY-MM-DD'
+            });
+        }
+
+        // Check whether PatientID already exists
+        const existingPatient = await Patient.findOne({PatientID});
 
         if (existingPatient) {
             return res.status(409).json({
@@ -38,7 +47,7 @@ export const addPatient = async (req, res) => {
             Gender,
             City,
             Department,
-            AdmissionDate,
+            AdmissionDate: parsedDate,
             Diagnosis,
             DoctorAssigned,
             Status,
@@ -49,7 +58,6 @@ export const addPatient = async (req, res) => {
         // Save patient to MongoDB
         const savedPatient = await newPatient.save();
 
-        // Return successful response
         res.status(201).json({
             success: true,
             message: 'Patient added successfully',
@@ -57,20 +65,18 @@ export const addPatient = async (req, res) => {
         });
 
     } catch (error) {
-
         res.status(400).json({
             success: false,
             message: error.message
         });
-
     }
-}
+};
+
+
 export const updatePatient = async (req, res) => {
     try {
-        // Get PatientID and updated information
         const {PatientID, ...updateData} = req.body;
 
-        // Check whether PatientID was provided
         if (!PatientID) {
             return res.status(400).json({
                 success: false,
@@ -78,7 +84,6 @@ export const updatePatient = async (req, res) => {
             });
         }
 
-        // Fields that are allowed to be updated
         const allowedFields = [
             'PatientName',
             'Age',
@@ -93,7 +98,6 @@ export const updatePatient = async (req, res) => {
             'TreatmentCost'
         ];
 
-        // Include only fields provided in the request
         const updates = {};
 
         allowedFields.forEach((field) => {
@@ -102,7 +106,6 @@ export const updatePatient = async (req, res) => {
             }
         });
 
-        // Check whether any fields were provided for updating
         if (Object.keys(updates).length === 0) {
             return res.status(400).json({
                 success: false,
@@ -110,9 +113,23 @@ export const updatePatient = async (req, res) => {
             });
         }
 
-        // Update the patient record
+        // Convert and validate AdmissionDate if provided
+        if (updates.AdmissionDate !== undefined) {
+            const parsedDate = parseDate(updates.AdmissionDate);
+
+            if (!parsedDate) {
+                return res.status(400).json({
+                    success: false,
+                    message: 'Invalid AdmissionDate. Use DD/MM/YYYY or YYYY-MM-DD'
+                });
+            }
+
+            updates.AdmissionDate = parsedDate;
+        }
+
+        // Update patient record
         const updatedPatient = await Patient.findOneAndUpdate(
-            {PatientID: PatientID},
+            {PatientID},
             {$set: updates},
             {
                 new: true,
@@ -120,7 +137,6 @@ export const updatePatient = async (req, res) => {
             }
         );
 
-        // Check whether patient exists
         if (!updatedPatient) {
             return res.status(404).json({
                 success: false,
@@ -128,7 +144,6 @@ export const updatePatient = async (req, res) => {
             });
         }
 
-        // Return successful response
         res.status(200).json({
             success: true,
             message: 'Patient updated successfully',
@@ -142,6 +157,8 @@ export const updatePatient = async (req, res) => {
         });
     }
 };
+
+
 export const getPatientById = async (req, res) => {
     try {
         // Get PatientID from URL parameters

@@ -174,7 +174,6 @@ export const getPatientById = async (req, res) => {
         });
     }
 };
-
 export const deletePatient = async (req, res) => {
     try {
         const {City, Status} = req.body;
@@ -206,7 +205,6 @@ export const deletePatient = async (req, res) => {
         });
     }
 };
-
 export const getDepartmentStats = async (req, res) => {
     try {
         const {department} = req.params;
@@ -242,7 +240,6 @@ export const getDepartmentStats = async (req, res) => {
         });
     }
 };
-
 export const getLongStayPatients = async (req, res) => {
     try {
         const {department, minStay} = req.query;
@@ -277,7 +274,6 @@ export const getLongStayPatients = async (req, res) => {
         });
     }
 };
-
 export const getPatientsByAverageCost = async (req, res) => {
     try {
         const {department, minAverageCost} = req.query;
@@ -350,7 +346,6 @@ export const getPatientsByAverageCost = async (req, res) => {
         });
     }
 };
-
 export const getDepartmentSummary = async (req, res) => {
     try {
 
@@ -382,32 +377,35 @@ export const getDepartmentSummary = async (req, res) => {
 
         // Calculate hospital-wide totals
         const totalPatients = summary.reduce(
-            (total, dept) => total + dept.NumberOfPatients, 0
+            (total, dept) => total + dept.NumberOfPatients,
+            0
         );
 
         const totalTreatmentCost = summary.reduce(
-            (total, dept) => total + dept.TotalTreatmentCost, 0
+            (total, dept) => total + dept.TotalTreatmentCost,
+            0
         );
 
-        // Weighted average length of stay
+        // Calculate weighted average length of stay
         const totalPatientDays = summary.reduce(
             (total, dept) =>
                 total + (
-                    dept.AverageLengthOfStay * dept.NumberOfPatients
-                ), 0
+                    dept.AverageLengthOfStay *
+                    dept.NumberOfPatients
+                ),
+            0
         );
 
-        const hospitalAverageStay =
-            totalPatients > 0
-                ? totalPatientDays / totalPatients
-                : 0;
+        const hospitalAverageStay = totalPatients > 0
+            ? totalPatientDays / totalPatients
+            : 0;
 
-        const hospitalCostPerPatient =
-            totalPatients > 0
-                ? totalTreatmentCost / totalPatients
-                : 0;
+        // Calculate hospital-wide cost per patient
+        const hospitalCostPerPatient = totalPatients > 0
+            ? totalTreatmentCost / totalPatients
+            : 0;
 
-        // Add department percentages and cost per patient
+        // Calculate department percentages and cost per patient
         const departments = summary.map(dept => ({
             Department: dept._id,
 
@@ -426,8 +424,8 @@ export const getDepartmentSummary = async (req, res) => {
                 : 0
         }));
 
-        // Return department data and hospital totals
-        res.status(200).json({
+        // Return department summary and hospital-wide totals
+        return res.status(200).json({
             success: true,
 
             data: {
@@ -435,9 +433,14 @@ export const getDepartmentSummary = async (req, res) => {
 
                 totals: {
                     NumberOfPatients: totalPatients,
-                    PatientShare: 100,
+
+                    // FIX: Empty collection should return 0%, not 100%
+                    PatientShare: totalPatients > 0 ? 100 : 0,
+
                     AverageLengthOfStay: hospitalAverageStay,
+
                     TotalTreatmentCost: totalTreatmentCost,
+
                     CostPerPatient: hospitalCostPerPatient
                 }
             }
@@ -445,14 +448,14 @@ export const getDepartmentSummary = async (req, res) => {
 
     } catch (error) {
 
-        res.status(500).json({
-            success: false,
-            message: error.message
-        });
+        console.error('[getDepartmentSummary] Error:', error);
 
+        return res.status(500).json({
+            success: false,
+            message: 'Failed to retrieve department summary'
+        });
     }
 };
-
 export const previewDelete = async (req, res) => {
     try {
         const {city, status} = req.query;

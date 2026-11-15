@@ -9,14 +9,17 @@ medtrack/
 │   │   └── database.js
 │   │
 │   ├── models/
+|   |   ├── Patient.js
 │   ├── controllers/
+|   |   ├── PatientController.js
 │   ├── routes/
+|   |   ├── PatientRoutes.js
 │   ├── middleware/
 │   ├── tests/
 │   │
 │   ├── .env
-│   ├── .env.example
 │   ├── server.js
+│   ├── package-lock.json
 │   └── package.json
 │
 └── frontend/

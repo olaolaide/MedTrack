@@ -8,8 +8,6 @@
  * Your own server and database can stay running while the test runs, and they are never touched.
  *
  * Run:      npm test            ("test": "node --test tests/smoke.test.js")
- * Install:  npm i -D mongodb-memory-server      (first run downloads a MongoDB binary)
- * No download? Set TEST_MONGO_URI to any spare MongoDB and no extra package is needed.
  */
 import {test, before, after} from 'node:test';
 import assert from 'node:assert/strict';

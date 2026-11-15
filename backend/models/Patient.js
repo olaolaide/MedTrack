@@ -22,37 +22,43 @@ const patientSchema = new mongoose.Schema({
 
     Gender: {
         type: String,
-        required: true
+        required: true,
+        enum: ['Male', 'Female', 'Other']
     },
 
     City: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
 
     Department: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
 
     AdmissionDate: {
-        type: String,
+        type: Date,
         required: true
     },
 
     Diagnosis: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
 
     DoctorAssigned: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
 
     Status: {
         type: String,
-        required: true
+        required: true,
+        enum: ['Admitted', 'Discharged', 'Under Treatment']
     },
 
     LengthOfStay: {
@@ -72,6 +78,6 @@ const patientSchema = new mongoose.Schema({
     versionKey: false
 });
 
-const Patient = mongoose.model('Patient', patientSchema, 'PatientData');
+const Patient = mongoose.model('Patient', patientSchema);
 
 export default Patient;

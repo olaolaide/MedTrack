@@ -72,7 +72,7 @@ export const addPatient = async (req, res) => {
     }
 };
 
-
+// update patient
 export const updatePatient = async (req, res) => {
     try {
         const {PatientID, ...updateData} = req.body;

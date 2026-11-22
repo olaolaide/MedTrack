@@ -71,6 +71,7 @@ export default function SummaryPage() {
         totalTreatmentCost,
         averageLengthOfStay,
         averageCostPerPatient,
+        deptsByCaseload,
     } = analytics;
 
     return (
@@ -100,7 +101,79 @@ export default function SummaryPage() {
                         </tr>
                         </thead>
                         <tbody>
+                        {deptsByCaseload.map((dept) => {
+                            const deptName = dept.Department ?? "Unknown";
+                            const patientCount = Number(dept.NumberOfPatients ?? 0);
+                            const sharePercent = Number(dept.PatientShare ?? 0);
+                            const avgLengthOfStay = Number(dept.AverageLengthOfStay ?? 0);
+                            const totalDeptCost = Number(dept.TotalTreatmentCost ?? 0);
+                            const avgCostPerPatient = Number(dept.CostPerPatient ?? 0);
 
+                            const color = getDepartmentColor(deptName);
+                            const aboveAvg = avgCostPerPatient > averageCostPerPatient;
+
+                            return (
+                                <tr key={deptName}>
+                                    <td>
+                <span className="department-name">
+                    <span
+                        className="department-dot"
+                        style={{backgroundColor: color}}
+                        aria-hidden="true"
+                    >
+                        {deptName.charAt(0)}
+                    </span>
+                    <span>{deptName}</span>
+                </span>
+                                    </td>
+                                    <td className="numeric">
+                                        <strong>{formatNumber(patientCount)}</strong>
+                                    </td>
+                                    <td>
+                                        <div className="share-cell">
+                    <span className="mini-track">
+                        <span
+                            style={{
+                                width: `${Math.min(sharePercent, 100)}%`,
+                                backgroundColor: color,
+                            }}
+                        />
+                    </span>
+                                            <span>{sharePercent.toFixed(1)}%</span>
+                                        </div>
+                                    </td>
+                                    <td className="numeric">
+                                        <div className="metric-cell">
+                    <span className="mini-track">
+                        <span
+                            style={{
+                                width: `${Math.min(
+                                    (avgLengthOfStay / maxStay) * 100,
+                                    100
+                                )}%`,
+                                backgroundColor: color,
+                            }}
+                        />
+                    </span>
+                                            <span>{formatDays(avgLengthOfStay)}</span>
+                                        </div>
+                                    </td>
+                                    <td className="numeric">
+                                        <strong>{formatCurrencyGBP(totalDeptCost)}</strong>
+                                    </td>
+                                    <td className="numeric">
+                                        {formatCurrencyGBP(avgCostPerPatient)}
+                                    </td>
+                                    <td>
+                <span
+                    className={`cost-status ${aboveAvg ? "above" : "below"}`}
+                >
+                    {aboveAvg ? "Above average" : "Below average"}
+                </span>
+                                    </td>
+                                </tr>
+                            );
+                        })}
                         </tbody>
                         <tfoot>
                         <tr>
@@ -139,13 +212,13 @@ export default function SummaryPage() {
                 <h2 className="panel-title">Department treatment cost comparison (£)</h2>
                 <div
                     className="chart-box-tall"
-                    style={{ width: "100%", height: Math.max(300, deptsByCost.length * 44) }}
+                    style={{width: "100%", height: Math.max(300, deptsByCost.length * 44)}}
                 >
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart
                             data={deptsByCost}
                             layout="vertical"
-                            margin={{ top: 10, right: 24, left: 12, bottom: 10 }}
+                            margin={{top: 10, right: 24, left: 12, bottom: 10}}
                             barSize={16}
                             barCategoryGap="24%"
                         >
@@ -159,7 +232,7 @@ export default function SummaryPage() {
                                 axisLine={false}
                                 tickLine={false}
                                 tickMargin={8}
-                                tick={{ fontSize: 12, fill: "#5b6b7f" }}
+                                tick={{fontSize: 12, fill: "#5b6b7f"}}
                                 tickFormatter={(val) => `£${Math.round(val / 1000)}k`}
                             />
                             <YAxis
@@ -170,10 +243,10 @@ export default function SummaryPage() {
                                 axisLine={false}
                                 tickLine={false}
                                 tickMargin={10}
-                                tick={{ fontSize: 12, fill: "#526176" }}
+                                tick={{fontSize: 12, fill: "#526176"}}
                             />
                             <Tooltip
-                                cursor={{ fill: "#f5f7fb" }}
+                                cursor={{fill: "#f5f7fb"}}
                                 formatter={(val) => [
                                     formatCurrencyGBP(Number(val ?? 0)),
                                     "Total Cost",

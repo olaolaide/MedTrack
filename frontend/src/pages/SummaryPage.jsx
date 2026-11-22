@@ -92,12 +92,12 @@ export default function SummaryPage() {
                         <thead>
                         <tr>
                             <th>Department</th>
-                            <th className="numeric">Number of Patients</th>
-                            <th>Caseload Share</th>
-                            <th className="numeric">Avg Length of Stay</th>
-                            <th className="numeric">Total Treatment Cost</th>
-                            <th className="numeric">Cost per Patient</th>
-                            <th>Cost Benchmark</th>
+                            <th className="centered">Number of Patients</th>
+                            <th className="centered">Caseload Share</th>
+                            <th className="centered">Avg Length of Stay</th>
+                            <th className="centered">Total Treatment Cost</th>
+                            <th className="centered">Cost per Patient</th>
+                            <th className="centered">Cost Benchmark</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -115,61 +115,61 @@ export default function SummaryPage() {
                             return (
                                 <tr key={deptName}>
                                     <td>
-                <span className="department-name">
-                    <span
-                        className="department-dot"
-                        style={{backgroundColor: color}}
-                        aria-hidden="true"
-                    >
-                        {deptName.charAt(0)}
-                    </span>
-                    <span>{deptName}</span>
-                </span>
+                                        <span className="department-name">
+                                            <span
+                                                className="department-dot"
+                                                style={{backgroundColor: color}}
+                                                aria-hidden="true"
+                                            >
+                                                {deptName.charAt(0)}
+                                            </span>
+                                            <span>{deptName}</span>
+                                        </span>
                                     </td>
-                                    <td className="numeric">
+                                    <td className="numeric centered">
                                         <strong>{formatNumber(patientCount)}</strong>
                                     </td>
-                                    <td>
+                                    <td className='centered'>
                                         <div className="share-cell">
-                    <span className="mini-track">
-                        <span
-                            style={{
-                                width: `${Math.min(sharePercent, 100)}%`,
-                                backgroundColor: color,
-                            }}
-                        />
-                    </span>
+                                            <span className="mini-track">
+                                                <span
+                                                    style={{
+                                                        width: `${Math.min(sharePercent, 100)}%`,
+                                                        backgroundColor: color,
+                                                    }}
+                                                />
+                                            </span>
                                             <span>{sharePercent.toFixed(1)}%</span>
                                         </div>
                                     </td>
-                                    <td className="numeric">
+                                    <td className="numeric centered">
                                         <div className="metric-cell">
-                    <span className="mini-track">
-                        <span
-                            style={{
-                                width: `${Math.min(
-                                    (avgLengthOfStay / maxStay) * 100,
-                                    100
-                                )}%`,
-                                backgroundColor: color,
-                            }}
-                        />
-                    </span>
+                                            <span className="mini-track">
+                                                <span
+                                                    style={{
+                                                        width: `${Math.min(
+                                                            (avgLengthOfStay / maxStay) * 100,
+                                                            100
+                                                        )}%`,
+                                                        backgroundColor: color,
+                                                    }}
+                                                />
+                                            </span>
                                             <span>{formatDays(avgLengthOfStay)}</span>
                                         </div>
                                     </td>
-                                    <td className="numeric">
+                                    <td className="numeric centered">
                                         <strong>{formatCurrencyGBP(totalDeptCost)}</strong>
                                     </td>
-                                    <td className="numeric">
+                                    <td className="numeric centered">
                                         {formatCurrencyGBP(avgCostPerPatient)}
                                     </td>
-                                    <td>
-                <span
-                    className={`cost-status ${aboveAvg ? "above" : "below"}`}
-                >
-                    {aboveAvg ? "Above average" : "Below average"}
-                </span>
+                                    <td className="centered">
+                                        <span
+                                            className={`cost-status ${aboveAvg ? "above" : "below"}`}
+                                        >
+                                            {aboveAvg ? "Above average" : "Below average"}
+                                        </span>
                                     </td>
                                 </tr>
                             );
@@ -178,20 +178,20 @@ export default function SummaryPage() {
                         <tfoot>
                         <tr>
                             <td>Hospital Total</td>
-                            <td className="numeric">
+                            <td className="numeric centered">
                                 {formatNumber(totalPatients)}
                             </td>
-                            <td className="tabular-nums">100.0%</td>
-                            <td className="numeric">
+                            <td className="tabular-nums centered">100.0%</td>
+                            <td className="numeric centered">
                                 {formatDays(averageLengthOfStay)}
                             </td>
-                            <td className="numeric">
+                            <td className="numeric centered">
                                 {formatCurrencyGBP(totalTreatmentCost)}
                             </td>
-                            <td className="numeric">
+                            <td className="numeric centered">
                                 {formatCurrencyGBP(averageCostPerPatient)}
                             </td>
-                            <td style={{color: "#5b6b7f", fontWeight: 500}}>
+                            <td className='centered' style={{color: "#5b6b7f", fontWeight: 500}}>
                                 Hospital baseline
                             </td>
                         </tr>

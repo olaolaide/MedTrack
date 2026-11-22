@@ -669,3 +669,16 @@ a {
     font-size: 11px;
     border-top: 1px solid #edf0f4;
 }
+
+.summary-table th.centered,
+.summary-table td.centered {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Center flex containers inside centered cells */
+.summary-table td.centered .share-cell,
+.summary-table td.centered .metric-cell,
+.summary-table td.centered .department-name {
+    justify-content: center;
+}

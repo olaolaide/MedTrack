@@ -1,10 +1,28 @@
-export const getDepartmentAnalytics = (summary) => {
-    const departments = summary?.departments ?? [];
-    const totals = summary?.totals ?? {};
+const normalizeDepartment = (dept) => ({
+    ...dept,
+    Department: dept.Department ?? dept.department ?? "Unknown",
+    NumberOfPatients: Number(dept.NumberOfPatients ?? dept.patientCount ?? 0),
+    PatientShare: Number(dept.PatientShare ?? dept.sharePercent ?? 0),
+    AverageLengthOfStay: Number(
+        dept.AverageLengthOfStay ?? dept.avgLengthOfStay ?? 0
+    ),
+    TotalTreatmentCost: Number(
+        dept.TotalTreatmentCost ?? dept.totalTreatmentCost ?? 0
+    ),
+    CostPerPatient: Number(
+        dept.CostPerPatient ?? dept.avgCostPerPatient ?? 0
+    ),
+});
 
-    if (!departments.length) {
+export const getDepartmentAnalytics = (summary) => {
+    const rawDepartments = summary?.departments ?? [];
+    const totals = summary?.totals ?? summary ?? {};
+
+    if (!rawDepartments.length) {
         return null;
     }
+
+    const departments = rawDepartments.map(normalizeDepartment);
 
     // Sort departments by a specified numeric property
     const sortBy = (key, order = "desc") =>
@@ -30,26 +48,31 @@ export const getDepartmentAnalytics = (summary) => {
     const topTwoDepts = deptsByCaseload.slice(0, 2);
 
     const topTwoShare = topTwoDepts
-        .reduce((total, dept) => total + (dept.PatientShare ?? 0), 0)
+        .reduce((total, dept) => total + dept.PatientShare, 0)
         .toFixed(1);
 
     // Cost distribution
-    const totalCost = Math.max(totals.TotalTreatmentCost ?? 0, 1);
+    const rawTotalCost =
+        totals.TotalTreatmentCost ?? totals.overallTotalCost ?? 0;
+    const totalCost = Math.max(Number(rawTotalCost) || 0, 1);
 
     const topTwoCostShare = (
-        topTwoDepts.reduce(
-            (total, dept) => total + (dept.TotalTreatmentCost ?? 0),
-            0
-        ) / totalCost * 100
+        (topTwoDepts.reduce(
+                (total, dept) => total + dept.TotalTreatmentCost,
+                0
+            ) /
+            totalCost) *
+        100
     ).toFixed(1);
 
     const longestCostShare = (
-        (longestStayDept.TotalTreatmentCost ?? 0) / totalCost * 100
+        (longestStayDept.TotalTreatmentCost / totalCost) *
+        100
     ).toFixed(1);
 
     // Maximum average length of stay (chart scaling)
     const maxStay = Math.max(
-        ...deptsByStay.map((dept) => Math.round(dept.AverageLengthOfStay ?? 0)),
+        ...deptsByStay.map((dept) => Math.round(dept.AverageLengthOfStay)),
         1
     );
 
@@ -76,9 +99,17 @@ export const getDepartmentAnalytics = (summary) => {
         maxStay,
 
         // Hospital-wide totals
-        totalPatients: totals.NumberOfPatients ?? 0,
-        totalTreatmentCost: totals.TotalTreatmentCost ?? 0,
-        averageLengthOfStay: totals.AverageLengthOfStay ?? 0,
-        averageCostPerPatient: totals.CostPerPatient ?? 0,
+        totalPatients: Number(
+            totals.NumberOfPatients ?? totals.totalPatients ?? 0
+        ),
+        totalTreatmentCost: Number(
+            totals.TotalTreatmentCost ?? totals.totalTreatmentCost ?? 0
+        ),
+        averageLengthOfStay: Number(
+            totals.AverageLengthOfStay ?? totals.averageLengthOfStay ?? 0
+        ),
+        averageCostPerPatient: Number(
+            totals.CostPerPatient ?? totals.averageCostPerPatient ?? 0
+        ),
     };
 };

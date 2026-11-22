@@ -508,3 +508,164 @@ a {
     border-radius: 9px;
     animation: pulse 1.5s ease-in-out infinite;
 }
+
+
+/* Tables */
+.table-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.summary-table,
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+    font-size: 12px;
+}
+
+.data-table {
+    min-width: 1060px;
+}
+
+.summary-table th,
+.data-table th {
+    padding: 14px 12px;
+    background: #f8f9fc;
+    color: #526176;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.summary-table td,
+.data-table td {
+    padding: 12px;
+    border-top: 1px solid #edf0f4;
+    white-space: nowrap;
+}
+
+.summary-table tbody tr:hover,
+.data-table tbody tr:hover {
+    background: #f9fbff;
+}
+
+.numeric {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.summary-table th.numeric,
+.data-table th.numeric {
+    text-align: right;
+}
+
+
+.department-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #161d2b;
+}
+
+.department-dot {
+    width: 23px;
+    height: 23px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.dept-square {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.share-cell,
+.metric-cell {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.metric-cell {
+    justify-content: flex-end;
+    color: #161d2b;
+}
+
+.mini-track {
+    display: inline-block;
+    width: 60px;
+    height: 6px;
+    border-radius: 8px;
+    background: #edf1f6;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.metric-cell .mini-track {
+    width: 44px;
+}
+
+.mini-track span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.cost-status {
+    font-weight: 600;
+}
+
+.cost-status.above {
+    color: #b54a00;
+}
+
+.cost-status.below {
+    color: #0e6027;
+}
+
+.status-admitted {
+    color: #0f62fe;
+    font-weight: 600;
+}
+
+.status-treatment {
+    color: #b45309;
+    font-weight: 600;
+}
+
+.status-discharged {
+    color: #15803d;
+    font-weight: 600;
+}
+
+.summary-table tfoot td {
+    background: #f8f9fc;
+    font-weight: 700;
+    border-top: 1px solid #dfe5ed;
+}
+
+.table-note {
+    margin: 0;
+    padding: 12px 15px;
+    color: var(--muted);
+    font-size: 11px;
+    border-top: 1px solid #edf0f4;
+}

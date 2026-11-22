@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "node --watch server.js",
+    "server": "node --watch server.js",
     "start": "node server.js",
     "seed": "node data/seed.js",
     "test": "node --test tests/smoke.test.js"

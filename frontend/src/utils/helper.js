@@ -1,50 +1,3 @@
-export const DEPARTMENTS = [
-    'Emergency Medicine',
-    'Maternity',
-    'Ophthalmology',
-    'Oncology',
-    'Urology',
-    'Pediatrics',
-    'Respiratory Medicine',
-    'Neurology',
-    'Orthopedics',
-    'Gastroenterology',
-    'ENT',
-    'Cardiology',
-    'General Surgery',
-    'Nephrology',
-    'Dermatology',
-];
-
-export const UK_CITIES = [
-    'London',
-    'Bristol',
-    'Liverpool',
-    'Milton Keynes',
-    'Portsmouth',
-    'Sheffield',
-    'Leicester',
-    'Manchester',
-    'York',
-    'Leeds',
-    'Norwich',
-    'Reading',
-    'Bradford',
-    'Nottingham',
-    'Coventry',
-    'Birmingham',
-    'Oxford',
-    'Southampton',
-    'Newcastle',
-    'Cambridge',
-];
-
-export const PATIENT_STATUSES = [
-    'Admitted',
-    'Under Treatment',
-    'Discharged',
-];
-
 export const DEPARTMENT_COLORS = {
     'Emergency Medicine': '#009d9a',
     Maternity: '#8a3ffc',
@@ -78,3 +31,8 @@ export function formatCurrencyGBP(amount) {
 export function formatNumber(value) {
     return new Intl.NumberFormat('en-GB').format(value);
 }
+
+export const formatDays = (days) => {
+    const rounded = Math.round(Number(days ?? 0));
+    return `${rounded} ${rounded === 1 ? "day" : "days"}`;
+};

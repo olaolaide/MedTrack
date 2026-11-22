@@ -8,67 +8,53 @@ const api = axios.create({
 });
 
 // 2.1 Add Patient
-export const addPatient = (patientData) => {
-    return api.post('/patients', patientData);
-};
+export const addPatient = (patientData) =>
+    api.post('/patients', patientData);
 
 // 2.2 Update Patient
-export const updatePatient = (patientData) => {
-    return api.post('/patients/update', patientData);
-};
+export const updatePatient = (patientData) =>
+    api.post('/patients/update', patientData);
 
-// Supporting endpoint for loading patient data by ID
-export const getPatientById = (patientID) => {
-    return api.get(`/patients/${patientID}`);
-};
+// Supporting endpoint: Get patient by ID
+export const getPatientById = (patientID) =>
+    api.get(`/patients/${encodeURIComponent(patientID)}`);
 
 // 2.3 Department Statistics
-export const getDepartmentStats = (department) => {
-    return api.get(`/stats/${department}`);
-};
+export const getDepartmentStats = (department) =>
+    api.get(`/stats/${encodeURIComponent(department)}`);
 
-// Supporting endpoint for delete preview
-export const previewDelete = (city, status) => {
-    return api.get('/patients/preview', {
-        params: {
-            city,
-            status
-        }
+// Supporting endpoint: Delete preview
+export const previewDelete = (city, status) =>
+    api.get('/patients/preview', {
+        params: {city, status}
     });
-};
 
 // 2.4 Delete Patients by City and Status
-export const deletePatients = (city, status) => {
-    return api.post('/patients/delete', {
-        city,
-        status
-    });
-};
+export const deletePatients = (city, status) =>
+    api.post('/patients/delete', {city, status});
 
 // 2.5 First 10 Patients with LengthOfStay > value
-export const getLongStayPatients = (department, lengthOfStay) => {
-    return api.get('/patients/long-stay', {
+export const getLongStayPatients = (department, minStay) =>
+    api.get('/patients/long-stay', {
         params: {
             department,
-            lengthOfStay
+            minStay
         }
     });
-};
 
 // 2.6 Average Treatment Cost Condition
-export const getPatientsByAverageCost = (department, condition, cost) => {
-    return api.get('/patients/high-avg-cost', {
+export const getPatientsByAverageCost = (department, minAverageCost) =>
+    api.get('/patients/high-avg-cost', {
         params: {
             department,
-            condition,
-            cost
+            minAverageCost
         }
     });
-};
 
 // 2.7 Department Summary
-export const getDepartmentSummary = () => {
-    return api.get('/summary');
+export const getDepartmentSummary = async () => {
+    const {data} = await api.get('/summary');
+    return data.data;
 };
 
 export default api;

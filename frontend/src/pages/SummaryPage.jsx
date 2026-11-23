@@ -52,7 +52,7 @@ export default function SummaryPage() {
         return () => {
             active = false;
         };
-    }, []);
+    }, []);3
 
     if (loading) return <LoadingState/>;
 

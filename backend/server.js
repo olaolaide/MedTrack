@@ -10,13 +10,29 @@ const app = express();
 app.disable('x-powered-by');
 
 // Middleware
-app.use(cors({
-    origin: env.CORS_ORIGIN,
-    credentials: true
+app.use(helmet())
+const allowedOrigins = [
+    env.CORS_ORIGIN,
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+];
+
+app.use(helmet({
+    crossOriginResourcePolicy: { policy: 'cross-origin' },
 }));
 
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error(`CORS blocked: ${origin}`));
+        }
+    },
+}));
+
+
 app.use(express.json());
-app.use(helmet());
 
 // Health check
 app.get('/api/health', (req, res) => {

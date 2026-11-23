@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    baseURL: '/api',
     headers: {
         'Content-Type': 'application/json'
     }
@@ -56,5 +56,11 @@ export const getDepartmentSummary = async () => {
     const {data} = await api.get('/summary');
     return data.data;
 };
+
+
+// exporting getting all the patients info
+export const getAllPatients = () =>
+    api.get('/patients/all')
+
 
 export default api;

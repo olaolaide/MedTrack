@@ -722,7 +722,154 @@ a {
 .selectPatientCon {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: grey;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #edf0f4;
+    height: 98px;
+
+}
+
+.patientName {
+    margin-left:15px;
+    font-weight: bold;
+    color: #575859;
+}
+
+.byID {
+    font-weight: bold;
+    color: #575859;
+}
+
+.selectPatientID {
+    width: 270px;
+    padding: 10px;
+    padding-bottom: 0;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
 }
 
 
+.patientNameSelect {
+        margin-left: 15px;
+        border-color:#dfe5ed;
+        border-radius: 5px;
+}
+
+
+.btnSearch {
+    border: 1px solid #dfe5ed;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.4s;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color:white;
+    
+
+}
+
+.btnSearch:hover,
+.btnSearch:focus {
+    background-color: #dfe5ed;
+}
+
+.srcIcon {
+    margin-right: 6px;
+}
+
+select,
+::picker(select){
+    appearance: base-select;
+}
+
+select {
+    border-color:#dfe5ed;
+    transition: 0.4s;
+    width: 240px;
+}
+
+select:hover,
+select:focus {
+    background: #dfe5ed;
+}
+
+select::picker-icon {
+    color: #7f8387;
+    transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+    rotate: 180deg;
+}
+
+::picker(select) {
+    border: none;
+}
+
+option {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+    border: 1px solid #dfe5ed;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+option:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+::picker(select) {
+    border-radius: 8px;
+}
+
+option:not(option:last-of-type) {
+    border-bottom: none;
+}
+
+option:hover,
+option:focus {
+    background: #d0e0f5;
+}
+
+option:checked {
+    font-weight: bold;
+}
+
+.btnSearch {
+    margin-top: 45px;
+}
+
+/* for adding patient */
+
+.addPatientDetailsCon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #edf0f4;
+    height: 600px;
+
+}
+
+.inputPatientID {
+    width: 250px;
+    padding: 10px;;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+
+.patientTxt {
+    margin-left: 60px;
+    font-weight: bold;
+    color: #575859;
+}

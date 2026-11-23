@@ -8,7 +8,8 @@ import {
     getDepartmentStats,
     getLongStayPatients,
     getPatientsByAverageCost,
-    getDepartmentSummary
+    getDepartmentSummary,
+    getAllPatients
 } from '../controllers/patientController.js';
 
 const router = Router();
@@ -17,6 +18,7 @@ const router = Router();
 router.post('/patients', addPatient);
 router.post('/patients/update', updatePatient);
 router.post('/patients/delete', deletePatient);
+router.get('/patients/all', getAllPatients);
 
 // Reads. Static paths must be registered BEFORE '/patients/:patientID',
 // otherwise Express treats "long-stay" as a PatientID.
@@ -27,5 +29,6 @@ router.get('/patients/:patientID', getPatientById);               // supporting:
 
 router.get('/stats/:department', getDepartmentStats);             // 1.8
 router.get('/summary', getDepartmentSummary);                     // 1.11
+
 
 export default router;

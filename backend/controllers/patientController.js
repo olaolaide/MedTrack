@@ -495,3 +495,25 @@ export const previewDelete = async (req, res) => {
         res.status(500).json({success: false, message: error.message});
     }
 };
+
+
+export const getAllPatients = async (req, res) => {
+    try {
+        const patients = await Patient.find()
+            .select('PatientID PatientName Department')
+            .sort({PatientName: 1})
+            .lean();
+
+        res.status(200).json({
+            success: true,
+            count: patients.length,
+            data: patients
+        });
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message
+        });
+    }
+};

@@ -30,7 +30,10 @@ export default function UpdatePatientPage() {
             </p>
 
             <div className = "selectPatientCon"> 
-                <div className = "byName"> </div>
+                <div className = "byName"> 
+
+                    <p> <
+                </div>
 
                  <div className = "byID"> </div>
         

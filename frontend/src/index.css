@@ -206,6 +206,7 @@ a {
     cursor: not-allowed;
 }
 
+
 .button-outline {
     background: #ffffff;
     color: #344054;
@@ -713,3 +714,15 @@ a {
         transform: rotate(360deg);
     }
 }
+
+
+
+/* Update and add css */
+
+.selectPatientCon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: grey;
+}
+
+

@@ -3,7 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import env from './config/env.js';
 import {connectDB, disconnectDB} from './config/database.js';
-import patientRoutes from './routes/patientRoutes.js';
+import patientRoutes from './routes/PatientRoutes.js';
 
 const app = express();
 

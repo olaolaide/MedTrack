@@ -1,4 +1,4 @@
-// importing all the parts :D
+// importing all the parts
 import { useEffect, useState } from "react";
 import LoadingState from "../components/LoadingState.jsx";
 import api from "../services/patientService";

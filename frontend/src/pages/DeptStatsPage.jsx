@@ -1,4 +1,4 @@
-// importing all the parts :D
+// importing
 import { useEffect, useState } from "react";
 import LoadingState from "../components/LoadingState.jsx";
 import StatCard from "../components/StatCard.jsx";

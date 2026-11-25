@@ -35,7 +35,7 @@ export default function UpdatePatientPage() {
     };
 
     return (
-        <div className="topHalf">
+        <div className = "topHalf">
             <h1>Update patient record</h1>
             <p>
                 Look up a patient by Patient ID and update any of their 11 clinical and billing fields
@@ -44,17 +44,17 @@ export default function UpdatePatientPage() {
             {loading && <LoadingState />}
             {error && <ErrorState message={error} />}
 
-            <div className="selectPatientCon">
-                <div className="byName">
-                    <p className="patientName">Select an existing patient</p>
+            <div className = "selectPatientCon">
+                <div className = "byName">
+                    <p className = "patientName">Select an existing patient</p>
 
                     <select
-                        name="PatientName"
-                        className="patientNameSelect"
-                        value={patientID}
-                        onChange={handlePatientSelect}
+                        name = "PatientName"
+                        className = "patientNameSelect"
+                        value = {patientID}
+                        onChange = {handlePatientSelect}
                     >
-                        <option value="">Select a patient</option>
+                        <option value = "">Select a patient</option>
 
                         {patients.map((patient) => (
                             <option key={patient.PatientID} value={patient.PatientID}>
@@ -64,25 +64,116 @@ export default function UpdatePatientPage() {
                     </select>
                 </div>
 
-                <div className="byID">
-                    <p className="IDTitle">Or enter a Patient ID</p>
+                <div className = "byID">
+                    <p className = "IDTitle">Or enter a Patient ID</p>
 
                     <input
-                        name="PatientID"
-                        className="selectPatientID"
+                        name = "PatientID"
+                        className = "selectPatientID"
                         value={patientID}
                         onChange={(e) => setPatientID(e.target.value)}
                     />
                 </div>
 
-                <div className="btnSearchID">
-                    <button className="btnSearch" type="button">
-                        <IoIosSearch className="srcIcon" /> Load record
+                <div className = "btnSearchID">
+                    <button className = "btnSearch" type="button">
+                        <IoIosSearch className = "srcIcon" /> Load record
                     </button>
                 </div>
             </div>
 
-            <div className="updatePatientCon"></div>
+            <div className = "updatePatientCon">
+
+                <h4 className = "editptID"> Editing Patient ID:  </h4>    
+                <hr className = "theLine"/>
+                <p className = "theOneSlc"> {patientID} </p>
+               
+
+                 <div className = "upPatientName">
+                    <p className = "upTitleName"> Age (years) </p>
+
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientNameUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "Oliver"
+                    />
+                </div> 
+
+
+
+                 <div className = "upPatientName">
+                    <p className = "upTitleAge"> Age (years) </p>
+
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientAgeUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "64"
+                    />
+                </div> 
+
+                    <div className = "upPatientName">
+                    <p className = "upTitleGender"> Gender </p>
+
+                   <select
+                        name = "patientDepartment"
+                        className = "patientGenderUp"
+                   > 
+                        <option> Male </option>
+                        <option> Female </option>
+                        <option> Non-Binary </option>
+                        <option> Other </option>
+                   </select>
+                </div>
+
+{/* 
+                   <div className = "upPatientName">
+                    <p className = "upTitleCity"> City </p>
+
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientCityUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "London"
+                    />
+                </div> */}
+
+                
+                {/* <div className = "upPatientName">
+                    <p className = "upTitleDepartment"> Department </p>
+
+                   <select
+                        name = "patientDepartment"
+                        className = "patientDepartmentUp"
+                   > 
+                        <option> Ophthalmology </option>
+                        <option> Pediatrics </option>
+                        <option> Emergency Medicine </option>
+                        <option> Nephrology </option>
+                        <option> Maternity </option>
+                        <option> Neurology </option>
+                        <option> ENT </option>
+                        <option> Dermatology </option>
+                        <option> Urology </option>
+                        <option> Gastroenterology </option>
+                        <option> Oncology </option>
+                        <option> Orthopedics </option>
+                        <option> General Surgery </option>
+                        <option> Respiratory Medicine </option>
+                        <option> Cardiology </option>
+                        
+                   </select>
+                </div>
+
+
+                */}
+
+            
+            </div>
         </div>
     );
 }

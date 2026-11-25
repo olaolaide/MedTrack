@@ -725,12 +725,12 @@ a {
     background-color: white;
     border-radius: 15px;
     border: 2px solid #edf0f4;
-    height: 98px;
+    height: 130px;
 
 }
 
 .patientName {
-    margin-left:15px;
+    margin-left: 90px;
     font-weight: bold;
     color: #575859;
 }
@@ -743,98 +743,13 @@ a {
 .selectPatientID {
     width: 270px;
     padding: 10px;
-    padding-bottom: 0;
     border: 1px solid #dfe5ed;
     border-radius: 5px;
 }
 
-/* delete and dept stats css */
-
-.formRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-    align-items: end;
-}
-
-.deptFormRow {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 12px;
-    align-items: end;
-}
-
-.formLabel {
-    display: block;
-    margin: 0 0 8px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #161d2b;
-}
-
-.formInput {
-    width: 100%;
-    height: 40px;
-    padding: 0 12px;
-    border: 1px solid #d0d8e4;
-    border-radius: 6px;
-    background-color: #ffffff;
-    color: #161d2b;
-    font-size: 13px;
-}
-
-select.formInput {
-    padding: 8px 12px;
-}
-
-.formInput:focus {
-    outline: none;
-    border-color: var(--blue);
-}
-
-.errorText {
-    margin: 12px 0 0;
-    color: var(--danger);
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.successText {
-    margin: 12px 0 0;
-    color: var(--success);
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.previewHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.previewTitle {
-    margin: 0;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.previewFilter {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-.monoCell {
-    font-family: var(--font-mono);
-}
-
-.boldCell {
-    font-weight: 700;
-}
-
 
 .patientNameSelect {
-        margin-left: 15px;
+        margin-left: 90px;
         border-color:#dfe5ed;
         border-radius: 5px;
 }
@@ -842,15 +757,15 @@ select.formInput {
 
 .btnSearch {
     border: 1px solid #dfe5ed;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 10px;
     transition: 0.4s;
-    color: black;
+    color: #575859;
     font-weight: bold;
     border-radius: 5px;
-    padding-right: 50px;
+    padding-right: 55px;
     padding-left: 50px;
     background-color:white;
+    margin-top: 50px;
     
 
 }
@@ -912,8 +827,23 @@ option:last-of-type {
 }
 
 ::picker(select) {
+    top:calc(anchor(bottom) + 1px);
+    left: anchor(10%);
+    opacity: 0;
+    transition: all 0.4s allow-discrete;
     border-radius: 8px;
 }
+
+:open::picker(select) {
+    opacity: 1;
+}
+
+@starting-style {
+:open::picker(select) {
+    opacity: 0;
+    }
+}
+
 
 option:not(option:last-of-type) {
     border-bottom: none;
@@ -928,9 +858,152 @@ option:checked {
     font-weight: bold;
 }
 
-.btnSearch {
-    margin-top: 45px;
+.updatePatientCon {
+    grid-template-columns: auto auto auto;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #edf0f4;
+    height: 500px;
+    margin-top: 20px;
 }
+
+
+/*edit beep boop */
+
+.patientTxt {
+    margin-left: 60px;
+    font-weight: bold;
+    color: #575859;
+}
+
+.upTitle {
+    bottom: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+}
+
+.selectPatientIDUP {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+}
+
+.editptID {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.theOneSlc{
+    margin-left: 30px;
+    font-weight: bold;
+    color: #2563eb;
+    bottom: 440px;
+    left: 142px;
+    position: absolute;
+}
+
+.theLine {
+    position: relative;
+    width: 1100px;
+    border: 0;
+    border-top: 1px solid #dfe5ed;;
+}
+
+.selectPatientAgeUP {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    left: 380px;
+    bottom: 125px;
+    position: relative;
+}
+
+.upTitleAge {
+    bottom: 125px;
+    left: 380px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
+
+.selectPatientCityUP {
+    width: 250px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 90px;
+    position: relative;
+}
+
+.upTitleCity {
+    bottom: 90px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
+
+.patientDepartmentUp {
+    width: 250px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    left: 300px;
+    bottom: 180px;
+    position: relative;
+}
+
+.upTitleDepartment {
+    bottom: 90px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    left: 300px;
+    bottom: 180px;
+}
+
+.upTitleGender {
+    bottom: 214px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    left: 750px;
+}
+
+.patientGenderUp {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    left: 750px;
+    bottom: 180px;
+    position: relative;
+}
+
+.selectPatientNameUP {
+     width: 250px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 10px;
+    position: relative;
+    position: absolute;
+
+}
+
 
 /* for adding patient */
 
@@ -952,8 +1025,5 @@ option:checked {
     margin-left: 60px;
 }
 
-.patientTxt {
-    margin-left: 60px;
-    font-weight: bold;
-    color: #575859;
-}
+
+

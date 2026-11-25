@@ -870,20 +870,28 @@ option:checked {
     margin-top: 20px;
 }
 
-
-/*edit beep boop */
-
 .patientTxt {
     margin-left: 60px;
     font-weight: bold;
     color: #575859;
 }
 
-.upTitle {
+.upTitleName {
     bottom: 30px;
     margin-left: 30px;
     font-weight: bold;
     color: #575859;
+}
+
+.selectPatientNameUpdate {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    left: 380px;
+    bottom: 125px;
+    position: relative;
 }
 
 .selectPatientIDUP {

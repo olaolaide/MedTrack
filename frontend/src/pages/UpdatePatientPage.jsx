@@ -82,6 +82,7 @@ export default function UpdatePatientPage() {
                 </div>
             </div>
 
+                    {/* update section woowoooo  */}
             <div className = "updatePatientCon">
 
                 <h4 className = "editptID"> Editing Patient ID:  </h4>    
@@ -89,23 +90,18 @@ export default function UpdatePatientPage() {
                 <p className = "theOneSlc"> {patientID} </p>
                
 
-                 <div className = "upPatientName">
-                    <p className = "upTitleName"> Age (years) </p>
-
+                 
+                    <p className = "upTitleName"> Patient Name </p>
                     <input
                         name = "PatientID"
-                        className = "selectPatientNameUP"
+                        className = "selectPatientNameUpdate"
                         value={patientID}
                         onChange={(e) => setPatientID(e.target.value)}
-                        placeholder = "Oliver"
+                        placeholder = "Oliver Bennet"
                     />
-                </div> 
+                
 
-
-
-                 <div className = "upPatientName">
                     <p className = "upTitleAge"> Age (years) </p>
-
                     <input
                         name = "PatientID"
                         className = "selectPatientAgeUP"
@@ -113,11 +109,9 @@ export default function UpdatePatientPage() {
                         onChange={(e) => setPatientID(e.target.value)}
                         placeholder = "64"
                     />
-                </div> 
 
-                    <div className = "upPatientName">
+                    
                     <p className = "upTitleGender"> Gender </p>
-
                    <select
                         name = "patientDepartment"
                         className = "patientGenderUp"
@@ -127,7 +121,7 @@ export default function UpdatePatientPage() {
                         <option> Non-Binary </option>
                         <option> Other </option>
                    </select>
-                </div>
+             
 
 {/* 
                    <div className = "upPatientName">

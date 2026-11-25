@@ -768,8 +768,6 @@ a {
     padding-left: 50px;
     background-color:white;
     margin-top: 50px;
-    
-
 }
 
 .btnSearch:hover,
@@ -1119,6 +1117,49 @@ option:checked {
     bottom: 562px;
     left: 380px;
     position: relative;
+}
+
+.upTitleCost {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    bottom: 645px;
+    left: 750px;
+}
+
+.selectPatientCostUP {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 653px;
+    left: 750px;
+    position: relative;
+}
+
+.saveBtn {
+    background-color: #0f62fe;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    bottom: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    position: absolute;
+    right: 50px;
+     border: 1px solid #dfe5ed;
+
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.saveBtn:hover, 
+.saveBtn:focus {
+    background-color: white;
+    color: #0f62fe;
 }
 
 /* for adding patient */

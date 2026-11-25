@@ -4,6 +4,7 @@ import LoadingState from "../components/LoadingState.jsx";
 import { getAllPatients, getPatientById, updatePatient } from "../services/patientService";
 import { IoIosSearch } from "react-icons/io";
 import { MdDateRange } from "react-icons/md";
+import { IoIosSave } from "react-icons/io";
 
 
 export default function UpdatePatientPage() {
@@ -208,6 +209,17 @@ export default function UpdatePatientPage() {
                         placeholder = "6"
                     />
 
+                    <p className = "upTitleCost"> Treatment Cost (£) </p>
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientCostUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "4250"
+                    />
+
+                    <button className = "saveBtn"> <IoIosSave className = "saveUp"/> Save Changes </button>
+                    
 
 
             

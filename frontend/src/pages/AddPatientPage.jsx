@@ -127,6 +127,8 @@ export default function AddPatientPage() {
                         <IoPersonAddOutline className = "addpersonIcon"/> Add Patient
                      </button> 
 
+                     <button className = "btnClear" type = "button"> Clear Field </button>
+
 
 
 

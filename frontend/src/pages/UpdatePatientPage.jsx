@@ -137,7 +137,6 @@ export default function UpdatePatientPage() {
                
 
                     <p className = "upTitleDepartment"> Department </p>
-
                    <select
                         name = "patientDepartment"
                         className = "patientDepartmentUp"
@@ -168,7 +167,47 @@ export default function UpdatePatientPage() {
                             <MdDateRange className = "dateIcon"/> 
                     </div>
                    
-               
+                    
+                    <p className = "upTitleDiagnosis"> Diagnosis </p>
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientDiagnosisUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "Atrial Fibrillation"
+                    />
+
+                     
+                    <p className = "upTitleDR"> Doctor Assigned </p>
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientDRUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "Atrial Fibrillation"
+                    />
+
+
+                  <p className = "upTitleStatusUp"> Status </p>
+                   <select
+                        name = "patientStatus"
+                        className = "patientStatusUp"
+                   > 
+                        <option> Admitted </option>
+                        <option> Discharged </option>
+                        <option> Under Treatment </option>
+                   </select>
+
+
+                   <p className = "upTitleLength"> Length of stay (days) </p>
+                    <input
+                        name = "PatientID"
+                        className = "selectPatientLengthUP"
+                        value={patientID}
+                        onChange={(e) => setPatientID(e.target.value)}
+                        placeholder = "6"
+                    />
+
 
 
             

@@ -1034,11 +1034,92 @@ option:checked {
 }
 
 .dateIcon {
-    
+    margin-left: 10px;
+    left: 300px;
+    bottom: 39px;
+    font-weight: bold;
+    position: relative;
 }
 
+.dateIcon:hover {
+    cursor: pointer;
+}
 
+.upTitleDiagnosis {
+    bottom: 374px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
 
+.selectPatientDiagnosisUP {
+    width: 722px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 380px;
+    position: relative;
+}
+
+.upTitleDR {
+    bottom: 465px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    left: 745px;
+}
+
+.selectPatientDRUP {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 471px;
+    left: 745px;
+    position: relative;
+}
+
+.upTitleStatusUp {
+    bottom: 465px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
+
+.patientStatusUp {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 471px;
+    position: relative;
+}
+
+.upTitleLength {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    bottom: 555px;
+    left: 380px;
+}
+
+.selectPatientLengthUP {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 562px;
+    left: 380px;
+    position: relative;
+}
 
 /* for adding patient */
 

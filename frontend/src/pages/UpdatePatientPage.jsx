@@ -130,9 +130,8 @@ export default function UpdatePatientPage() {
 
                     <input
                         name = "PatientID"
+                        type = "text"
                         className = "selectPatientCityUP"
-                        value={patientID}
-                        onChange={(e) => setPatientID(e.target.value)}
                         placeholder = "London"
                     />
                

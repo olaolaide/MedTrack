@@ -85,7 +85,6 @@ export default function DeletePatientsPage() {
             setError(null);
             setSuccess(null);
 
-            // the backend wants City and Status with capital letters
             const response = await api.post("/patients/delete", {
                 City: city.trim(),
                 Status: status

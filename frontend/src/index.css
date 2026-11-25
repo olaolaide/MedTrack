@@ -1146,11 +1146,11 @@ option:checked {
     width: 180px;
     height: 40px;
     bottom: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 10px;
     position: absolute;
     right: 50px;
-     border: 1px solid #dfe5ed;
+    border: 1px solid #dfe5ed;
 
     transition: 0.4s;
     font-weight: bold;
@@ -1160,6 +1160,12 @@ option:checked {
 .saveBtn:focus {
     background-color: white;
     color: #0f62fe;
+}
+
+.saveUp {
+    position: relative;
+    top: 2px;
+    right: 10px;
 }
 
 /* for adding patient */

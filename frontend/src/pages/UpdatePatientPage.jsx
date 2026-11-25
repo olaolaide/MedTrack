@@ -3,6 +3,8 @@ import ErrorState from "../components/ErrorState.jsx";
 import LoadingState from "../components/LoadingState.jsx";
 import { getAllPatients, getPatientById, updatePatient } from "../services/patientService";
 import { IoIosSearch } from "react-icons/io";
+import { MdDateRange } from "react-icons/md";
+
 
 export default function UpdatePatientPage() {
     const [error, setError] = useState(null);
@@ -162,7 +164,8 @@ export default function UpdatePatientPage() {
 
                     <div className = "selectPatientAddDate"> 
 
-
+                            <p className = "AdmissionDate"> 14/09/2026 </p>
+                            <MdDateRange className = "dateIcon"/> 
                     </div>
                    
                

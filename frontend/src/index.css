@@ -1005,7 +1005,7 @@ option:checked {
 }
 
 .upTitleAddDate {
-    bottom: 360px;
+    bottom: 363px;
     margin-left: 30px;
     font-weight: bold;
     color: #575859;
@@ -1014,6 +1014,26 @@ option:checked {
 }
 
 .selectPatientAddDate {
+    position:relative;
+    background-color: white;
+    border: 1px solid #dfe5ed;
+    width: 340px;
+    height: 40px;
+    bottom: 375px;
+    margin-left: 30px;
+    left: 745px;
+    border-radius: 5px;
+}
+
+.AdmissionDate {
+    margin-left: 10px;
+    bottom: 5px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
+
+.dateIcon {
     
 }
 

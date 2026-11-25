@@ -889,8 +889,7 @@ option:checked {
     margin-left: 30px;
     border: 1px solid #dfe5ed;
     border-radius: 5px;
-    left: 380px;
-    bottom: 125px;
+    bottom: 8px;
     position: relative;
 }
 
@@ -923,6 +922,16 @@ option:checked {
     border-top: 1px solid #dfe5ed;;
 }
 
+
+.upTitleAge {
+    bottom: 80px;
+    left: 380px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
+
 .selectPatientAgeUP {
     width: 340px;
     padding: 10px;
@@ -934,14 +943,8 @@ option:checked {
     position: relative;
 }
 
-.upTitleAge {
-    bottom: 125px;
-    left: 380px;
-    margin-left: 30px;
-    font-weight: bold;
-    color: #575859;
-    position: relative;
-}
+
+
 
 .selectPatientCityUP {
     width: 250px;

@@ -1188,3 +1188,262 @@ option:checked {
     margin-left: 60px;
 }
 
+.patientTxtID {
+    bottom: 595px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+    
+}
+
+.inputPatientID {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 560px;
+    position: absolute;
+}
+
+.patientTxtName {
+    bottom: 595px;
+    left: 630px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientName {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 560px;
+    left: 630px;
+    position: absolute;
+}
+
+.patientAge {
+    bottom: 595px;
+    left: 1000px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientAge {
+     width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 560px;
+    left: 1000px;
+    position: absolute;
+}
+
+.patientTxtGender {
+    bottom: 500px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputpatientGender {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 465px;
+    position: absolute;
+}
+
+.patientTxtCity {
+    bottom: 500px;
+    left: 630px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientCity {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 465px;
+    left: 630px;
+    position: absolute;
+}
+
+.patientTxtDept {
+    bottom: 500px;
+    left: 1000px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientDept {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 465px;
+    left: 1000px;
+    position: absolute;
+}
+
+.patientTxtDate {
+    bottom: 410px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.selectPatientAddDateAdd {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #dfe5ed;
+    width: 340px;
+    height: 40px;
+    margin-left: 30px;
+    left: 263px;
+    bottom: 375px;
+    border-radius: 5px;
+}
+
+
+.patientTxtDiagnosis {
+    bottom: 410px;
+    left: 630px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientDiagnosis {
+    width: 715px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 375px;
+    left: 630px;
+    position: absolute;
+}
+
+.patientTxtDr {
+    bottom: 310px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientIDDr {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    bottom: 270px;
+    position: absolute;
+}
+
+.patientTxtStat{
+    bottom: 310px;
+    margin-left: 30px;
+    left: 630px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientStat {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #dfe5ed;
+    width: 340px;
+    height: 40px;
+    bottom: 270px;
+    margin-left: 30px;
+    left: 630px;
+    border-radius: 5px;
+}
+
+.patientTxtStay {
+    bottom: 310px;
+    margin-left: 30px;
+    left: 1000px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientStay {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #dfe5ed;
+    width: 340px;
+    height: 40px;
+    bottom: 270px;
+    margin-left: 30px;
+    left: 1000px;
+    border-radius: 5px;
+}
+
+.patientTxtCost {
+    bottom: 210px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: absolute;
+}
+
+.inputPatientCost {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #dfe5ed;
+    width: 340px;
+    height: 40px;
+    bottom: 180px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.btnAddPerson {
+    background-color: #0f62fe;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    bottom: 68px;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: absolute;
+    right: 50px;
+    border: 1px solid #dfe5ed;
+
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.btnAddPerson:hover, 
+.btnAddPerson:focus {
+    background-color: white;
+    color: #0f62fe;
+}

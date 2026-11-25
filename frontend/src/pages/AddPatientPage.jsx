@@ -6,6 +6,8 @@ import { IoIosSearch } from "react-icons/io";
 import LoadingState from "../components/LoadingState.jsx";
 import {getPatientById} from"../services/patientService";
 import { data } from "react-router-dom";
+import { MdDateRange } from "react-icons/md";
+import { IoPersonAddOutline } from "react-icons/io5";
 
 
 export default function AddPatientPage() {
@@ -45,74 +47,85 @@ export default function AddPatientPage() {
 
 
             <div className = "addPatientDetailsCon"> 
-                 <div className = "patientIdADD"> 
-                    <p className = "patientTxt" > Patient ID </p>
+
+          
+                    <p className = "patientTxtID" > Patient ID </p>
                     <input name = "PatientID" className = "inputPatientID"  placeholder = "UKH-1061" />
-                </div>
 
-                 <div className = "patientNameADD"> 
-                    <p className = "patientTxt" > Patient Name </p>
-                    <input name = "PatientID" className = "inputPatientID"  placeholder = "Full Name" />
-                </div>
+                 
+                     <p className = "patientTxtName" > Patient Name </p>
+                    <input name = "PatientID" className = "inputPatientName"  placeholder = "Full Name" />
+                
 
-                   <div className = "patientAgeADD"> 
-                    <p className = "patientTxt" > Patient Age </p>
-                    <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                </div>
+                    <p className = "patientAge" > Patient Age </p>
+                    <input name = "PatientID" className = "inputPatientAge"  placeholder = "e.g. 54" />
+                  
 
-                   <div className = "patientGenderADD"> 
-                        <p className = "patientTxt" > Patient Gender </p>
-                        <select name = "PatientName" className = "patientNameSelect">
-                            <option value = "temp"> temp </option>
-                            <option value = "temp"> temp2 </option>
-                            <option value = "temp"> temp3 </option>
+                    <p className = "patientTxtGender" > Patient Gender </p>
+                    <select name = "PatientName" className = "inputpatientGender">
+                        <option value = "temp"> Female </option>
+                        <option value = "temp"> Male </option>
+                        <option value = "temp"> Non-binary </option>
+                    </select> 
+                    
+
+                        <p className = "patientTxtCity" > Patient City </p>
+                        <input name = "PatientID" className = "inputPatientCity"  placeholder = "London" />
+                    
+
+                        <p className = "patientTxtDept" > Departments </p>
+                        <select name = "PatientName" className = "inputPatientDept">
+                            <option> Ophthalmology </option>
+                            <option> Pediatrics </option>
+                            <option> Emergency Medicine </option>
+                            <option> Nephrology </option>
+                            <option> Maternity </option>
+                            <option> Neurology </option>
+                            <option> ENT </option>
+                            <option> Dermatology </option>
+                            <option> Urology </option>
+                            <option> Gastroenterology </option>
+                            <option> Oncology </option>
+                            <option> Orthopedics </option>
+                            <option> General Surgery </option>
+                            <option> Respiratory Medicine </option>
+                            <option> Cardiology </option>
                         </select> 
-                     </div>
+                    
+ 
+                        <p className = "patientTxtDate" > Admission Date </p>
+                        <div className = "selectPatientAddDateAdd"> 
+                            <p className = "AdmissionDate"> 14/09/2026 </p>
+                            <MdDateRange className = "dateIcon"/> 
+                        </div>
+                   
 
-                    <div className = "patientCityADD"> 
-                        <p className = "patientTxt" > Patient City </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
-
-                    <div className = "patientDepartmentADD"> 
-                        <p className = "patientTxt" > Patient Department </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
+                        <p className = "patientTxtDiagnosis" > Diagnosis </p>
+                        <input name = "PatientDiagnosis" className = "inputPatientDiagnosis"  placeholder = "Atrial Fibrillation" />
 
 
-                     <div className = "patientDatetADD"> 
-                        <p className = "patientTxt" > Admission Date </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
+                        <p className = "patientTxtDr" > Doctor Assigned </p>
+                        <input name = "PatientID" className = "inputPatientIDDr"  placeholder = "e.g Dr Eleanor Vance" />
 
-                     <div className = "patientDiagnosisADD"> 
-                        <p className = "patientTxt" > Diagnosis </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
 
-                     <div className = "patientDoctorADD"> 
-                        <p className = "patientTxt" > Doctor Assigned </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
+                        <p className = "patientTxtStat" > Status </p>
+                        <select name = "PatientStatus" className = "inputPatientStat">
+                            <option> Admitted </option>
+                            <option> Discharged </option>
+                            <option> Under Treatment </option>
+                        </select> 
+        
 
-                    <div className = "patientStatusADD"> 
-                        <p className = "patientTxt" > Status </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
+                        <p className = "patientTxtStay" > Length of stay (days) </p>
+                        <input name = "PatientID" className = "inputPatientStay"  placeholder = "6" />
+        
 
-                    <div className = "patientDurationADD"> 
-                        <p className = "patientTxt" > Length of stay (days) </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
+                        <p className = "patientTxtCost" > Treatment Cost (£) </p>
+                        <input name = "PatientID" className = "inputPatientCost"  placeholder = "1432" />
 
-                    <div className = "patientCostADD"> 
-                        <p className = "patientTxt" > Treatment Cost (£) </p>
-                        <input name = "PatientID" className = "inputPatientID"  placeholder = "e.g. 54" />
-                    </div>
-
-                     <button className = "btnSearch" type = "button" >
-                        <IoIosSearch className = "srcIcon"/> Load record
-                     </button>
+                     <button className = "btnAddPerson" type = "button" >
+                        <IoPersonAddOutline className = "addpersonIcon"/> Add Patient
+                     </button> 
 
 
 

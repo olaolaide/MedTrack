@@ -160,9 +160,7 @@ export default function UpdatePatientPage() {
 
                    
                     <p className = "upTitleAddDate"> Admission Date</p>
-
                     <div className = "selectPatientAddDate"> 
-
                             <p className = "AdmissionDate"> 14/09/2026 </p>
                             <MdDateRange className = "dateIcon"/> 
                     </div>

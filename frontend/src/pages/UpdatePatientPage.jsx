@@ -123,8 +123,6 @@ export default function UpdatePatientPage() {
                    </select>
              
 
-{/* 
-                   <div className = "upPatientName">
                     <p className = "upTitleCity"> City </p>
 
                     <input
@@ -134,10 +132,8 @@ export default function UpdatePatientPage() {
                         onChange={(e) => setPatientID(e.target.value)}
                         placeholder = "London"
                     />
-                </div> */}
+               
 
-                
-                {/* <div className = "upPatientName">
                     <p className = "upTitleDepartment"> Department </p>
 
                    <select
@@ -159,12 +155,18 @@ export default function UpdatePatientPage() {
                         <option> General Surgery </option>
                         <option> Respiratory Medicine </option>
                         <option> Cardiology </option>
-                        
                    </select>
-                </div>
+
+                   
+                    <p className = "upTitleAddDate"> Admission Date</p>
+
+                    <div className = "selectPatientAddDate"> 
 
 
-                */}
+                    </div>
+                   
+               
+
 
             
             </div>

@@ -924,7 +924,7 @@ option:checked {
 
 
 .upTitleAge {
-    bottom: 80px;
+    bottom: 90px;
     left: 380px;
     margin-left: 30px;
     font-weight: bold;
@@ -939,54 +939,12 @@ option:checked {
     border: 1px solid #dfe5ed;
     border-radius: 5px;
     left: 380px;
-    bottom: 125px;
+    bottom: 98px;
     position: relative;
-}
-
-
-
-
-.selectPatientCityUP {
-    width: 250px;
-    padding: 10px;
-    margin-left: 30px;
-    border: 1px solid #dfe5ed;
-    border-radius: 5px;
-    bottom: 90px;
-    position: relative;
-}
-
-.upTitleCity {
-    bottom: 90px;
-    margin-left: 30px;
-    font-weight: bold;
-    color: #575859;
-    position: relative;
-}
-
-.patientDepartmentUp {
-    width: 250px;
-    padding: 10px;
-    margin-left: 30px;
-    border: 1px solid #dfe5ed;
-    border-radius: 5px;
-    left: 300px;
-    bottom: 180px;
-    position: relative;
-}
-
-.upTitleDepartment {
-    bottom: 90px;
-    margin-left: 30px;
-    font-weight: bold;
-    color: #575859;
-    position: relative;
-    left: 300px;
-    bottom: 180px;
 }
 
 .upTitleGender {
-    bottom: 214px;
+    bottom: 178px;
     margin-left: 30px;
     font-weight: bold;
     color: #575859;
@@ -1001,21 +959,65 @@ option:checked {
     border: 1px solid #dfe5ed;
     border-radius: 5px;
     left: 750px;
-    bottom: 180px;
+    bottom: 189px;
     position: relative;
 }
 
-.selectPatientNameUP {
-     width: 250px;
+
+.upTitleCity {
+    bottom: 188px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+}
+
+.selectPatientCityUP {
+    width: 340px;
     padding: 10px;
     margin-left: 30px;
     border: 1px solid #dfe5ed;
     border-radius: 5px;
-    bottom: 10px;
+    bottom: 195px;
     position: relative;
-    position: absolute;
-
 }
+
+
+.upTitleDepartment {
+    bottom: 90px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    left: 380px;
+    bottom: 274px;
+}
+
+.patientDepartmentUp {
+    width: 340px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #dfe5ed;
+    border-radius: 5px;
+    left: 380px;
+    bottom: 285px;
+    position: relative;
+}
+
+.upTitleAddDate {
+    bottom: 360px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #575859;
+    position: relative;
+    left: 750px;
+}
+
+.selectPatientAddDate {
+    
+}
+
+
 
 
 /* for adding patient */
